@@ -20,16 +20,20 @@ an explanation of the components of a senior thesis and the way in
 which you create them in LaTeX.
 
 Your course instructor will reduce a researcher's grade for this assignment if
-the pdf of your completed thesis document has not been properly released before
-the assignment's due date on December 13, 2021 at 11:59 pm. Unless you provide
-the course instructors with documentation of the extenuating circumstances that
-you are facing, no late work will be considered towards your grade for this
-project.
+the PDF of your completed thesis document has not been properly released before
+the assignment's due date as specified in the GitHub Classroom page when you
+accept this assignment. Unless you provide the course instructors with
+documentation of the extenuating circumstances that you are facing, no late work
+will be considered towards your grade for this project.
 
 For specific details about the general evaluation rubric for _minimum
-requirements_ please refer to the following list for the entire senior thesis:
+requirements_ please refer to the following list for the entire senior thesis.
+Please note that your senior thesis chapters in CMPSC 600 will be evaluated
+according to the content that you submit in that course and your senior thesis
+chapters in CMPSC 610 will be evaluated according to all of the following
+requirements.
 
-- [ ] The Thesis was submitted on time
+- [ ] The thesis was submitted on time
 - [ ] The title of the thesis is appropriate
 - [ ] The abstract provides a concise summary
 - [ ] The introduction section clearly describes the completed work
