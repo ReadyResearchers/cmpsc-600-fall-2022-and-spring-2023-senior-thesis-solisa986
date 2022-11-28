@@ -29,12 +29,11 @@ document via GitHub Actions.
 
 ## Overview
 
-This assignment requires a researcher to write a LaTeX document, stored in the
-file `SeniorThesis.tex` that describes [the key aspects of a
-senior thesis research project](#explanation-of-sections). Please refer to the
-source code in this file for
-an explanation of the components of a senior thesis and the way in
-which you create them in LaTeX.
+This assignment requires a researcher to write a Markdown and LaTeX document,
+stored in this README and in the file `thesis.md` that describes the key aspects
+of a senior thesis research project. Please refer to the source code in this
+file for an explanation of the components of a senior thesis and the way in
+which you create them in Markdown and/or LaTeX.
 
 Your course instructor will reduce a researcher's grade for this assignment if
 the PDF of your completed thesis document has not been properly released before
