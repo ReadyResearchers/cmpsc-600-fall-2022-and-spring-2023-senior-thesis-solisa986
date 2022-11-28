@@ -38,6 +38,7 @@ General Thesis Requirements:
   - [ ] The title of the thesis is appropriate
   - [ ] The abstract provides a concise summary
 
+Introduction Section Requirements:
 - [ ] The introduction section clearly describes the completed work
 - [ ] The introduction section motivates the completed work
 - [ ] The related work section describes relevant literature
