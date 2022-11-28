@@ -24,6 +24,8 @@ accept this assignment. Unless you provide the course instructors with
 documentation of the extenuating circumstances that you are facing, no late work
 will be considered towards your grade for this project.
 
+## Requirements
+
 For specific details about the general evaluation rubric for _minimum
 requirements_ please refer to the following list for the entire senior thesis.
 Please note that your senior thesis chapters in CMPSC 600 will be evaluated
@@ -103,7 +105,7 @@ it is expected that an exceptional senior thesis will exceed these requirements.
   - [ ] The discussion and future work section reflects on the completed research project
   - [ ] The conclusion outlines avenues for further and/or future work
 
-### Explanation of Sections
+### Explanation
 
 Please consult the following sub-sections, as section requirements may have
 changed from requirements in previous years. All descriptions of each section
