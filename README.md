@@ -33,9 +33,11 @@ according to the content that you submit in that course and your senior thesis
 chapters in CMPSC 610 will be evaluated according to all of the following
 requirements.
 
-- [ ] The thesis was submitted on time
-- [ ] The title of the thesis is appropriate
-- [ ] The abstract provides a concise summary
+- General Thesis Requirements:
+  - [ ] The thesis was submitted on time
+  - [ ] The title of the thesis is appropriate
+  - [ ] The abstract provides a concise summary
+
 - [ ] The introduction section clearly describes the completed work
 - [ ] The introduction section motivates the completed work
 - [ ] The related work section describes relevant literature
