@@ -67,7 +67,7 @@ it is expected that an exceptional senior thesis will exceed these requirements.
   - [ ] The thesis includes at least twelve references
   - [ ] Unless there is a convincing reason to require otherwise, each chapter
     in the senior thesis should contain at least ten to twenty pages of
-    contents formatting in the required style
+    contents formatted in the required style
   - [ ] The thesis consists of at least `7500` words
   - [ ] The thesis follows a logical flow at the level of chapters, sections,
     subsections, and individual paragraphs
