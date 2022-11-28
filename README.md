@@ -149,37 +149,44 @@ responding to the ethics requirements listed below.
 * overall project aims
 * background motivating your research
 * a high-level overview of ethical issues implied by the current state of the
-problem underlying the work
+  problem underlying the work
 
 ### Related Works
 
-* the review of relevant existing work (i.e. "literature review")
+* the review of relevant existing work (i.e., the "literature review")
 * the literature review should be a concise, scholarly review of the literature
-explaining the background to the proposed research
-* the review should provide the context for the aims of the research in
-relation to existing work on the topic
+  explaining the background to the proposed research
+* the review should provide the context for the aims of the research in relation
+  to existing work on the topic
+* the literature review should place the senior thesis research in the context
+  of the relevant existing work
 * review of ethical discussions referenced in the `Introduction`
 
 ### Method of Approach
 
-* describes the infrastructure and tools implemented to serve, test, and
-support research and conduct experiments
-* enumerates the general processes and code used by the project
-* here, where using diagrams or code snippets, elaboration of any included
-material is _required_
+* describes the infrastructure and tools implemented to serve, test, and support
+  research and conduct experiments
+* enumerates the general processes and code used by the project with required
+  technical content that would include, for instance, diagrams and/or code
+  snippets and/or algorithm statements
 * addresses the interventions that the research incorporates or develops to
-address ethical concerns in datasets, software processes, or theoretical
-approaches
+  address ethical concerns in datasets, software processes, or theoretical
+  approaches
 
 ### Experiments
 
 * displays and discusses evaluative metrics and data used as validation
-strategies the projects
+  strategies the projects
 * clearly defines thresholds for success, and discusses the outcomes of
-experiments relative to them
-* discusses any threats to validity that remain from the original summary of
-the research or those introduced by any approaches or data used in the these
-research and implementation process
+  experiments relative to them
+* explores the trade-offs evident in the experimental results, leverage
+  previously defined metrics about, for instance, efficiency and/or
+  effectiveness
+* uses techniques such as statistics and/or data visualizations to highlight the
+  key trends in the experimental results
+* discusses any threats to validity that remain from the original summary of the
+  research or those introduced by any approaches or data used in the these
+  research and implementation process
 
 ### Conclusion
 
