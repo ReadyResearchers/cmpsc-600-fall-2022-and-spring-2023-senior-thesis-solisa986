@@ -4,11 +4,9 @@
 
 This repository contains the starter for the Senior Thesis Proposal document.
 This document compiles using GitHub Actions; students should write the entirety
-of their document using the abstract.md and proposal.md files.
-
-The template contains more specific details about using the template. The
-remainder of this README considers the process of publishing the document via
-GitHub Actions.
+of their document using the `abstract.md` and `thesis.md` files. The template
+contains more specific details about using the template. The remainder of this
+README considers the process of publishing the document via GitHub Actions.
 
 ## Overview
 
