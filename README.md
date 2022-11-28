@@ -192,9 +192,9 @@ responding to the ethics requirements listed below.
 
 * provides a summary of your research and experimental outcomes
 * proposes, where applicable, future areas of work or research indicated by the
-conclusion of this research
+  conclusion of this research
 * includes an evidence- or results-based appraisal of ethical issues left
-unresolved or created by this research
+  unresolved or created by this research
 
 ## Tagging
 
