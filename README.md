@@ -215,10 +215,22 @@ again tag your work _before a `push` command_ with a tag that
 adheres to the [Semantic Versioning](http://semver.org/) standard.
 
 Each time that you correctly execute this sequence of commands you will release
-a new
-version of your document to GitHub that is easily accessible as a PDF to you
-and
-to your first and second readers.
+a new version of your document to GitHub that is easily accessible as a PDF to
+you and to your first and second readers.
+
+After creating the `log/` and `output/` directories in your project directory,
+you should be able to locally build your senior thesis using the command `pandoc
+--defaults pdf.yaml --to latex --metadata-file config.yaml --lua-filter
+.filters/abstract-to-meta.lua --template template/thesis.tex`. Please note that
+you must run this command from the root directory of the project after
+installing both the `pandoc` and `tectonic` packages. If the build of your
+senior thesis works correctly then the local file will be available in the
+`output/` directory. With that said, it is important to note that you should
+never commit the `SeniorThesis.pdf` file in the `output/` directory to your
+GitHub repository! Since PDF files are "derived" from the source code in your
+GitHub repository, they should never be committed to it. Instead, you should
+rely on GitHub Actions to create a copy of your `SeniorThesis.pdf` file by
+following the previously described steps for making a tagged release.
 
 ## Updates
 
