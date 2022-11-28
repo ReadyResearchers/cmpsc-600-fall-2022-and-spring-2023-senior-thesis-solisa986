@@ -1,4 +1,4 @@
-# CMPSC 600/610: Senior Thesis starter
+# CMPSC 600/610: Senior Thesis Starter for Fall 2022 and Spring 2023
 
 [![Release Senior Thesis](../../actions/workflows/main.yml/badge.svg)](../../actions/workflows/main.yml)
 
@@ -21,15 +21,51 @@ which you create them in LaTeX.
 
 Your course instructor will reduce a researcher's grade for this assignment if
 the pdf of your completed thesis document has not been properly released before
-the
-assignment's due date on December 13, 2021 at 11:59 pm. Unless
-you provide the course instructors with documentation of the extenuating
-circumstances that you are facing, no late work will be considered towards your
-grade for this project.
+the assignment's due date on December 13, 2021 at 11:59 pm. Unless you provide
+the course instructors with documentation of the extenuating circumstances that
+you are facing, no late work will be considered towards your grade for this
+project.
 
 For specific details about the general evaluation rubric for _minimum
-requirements_ please see [thesis
-guidelines](https://github.com/Allegheny-ComputerScience-600-Sum2022/course-materials/blob/main/CODE_OF_CONDUCT.md#thesis-document-minimum-requirements).
+requirements_ please refer to the following list for the entire senior thesis:
+
+- [ ] The Thesis was submitted on time
+- [ ] The title of the thesis is appropriate
+- [ ] The abstract provides a concise summary
+- [ ] The introduction section clearly describes the completed work
+- [ ] The introduction section motivates the completed work
+- [ ] The related work section describes relevant literature
+- [ ] The related work section situates the completed project in the broader
+  scope
+- [ ] The method section explains the process utilized in the completed study
+- [ ] The method section addresses as many of the following which are applicable
+  (minimum `1`):
+* `description of algorithms`
+* `programming languages`
+* `libraries`
+* `platforms`
+* `software tools`
+* `hardware`
+- [ ] The experimental results section includes a description of experiments
+  such that a reader should be able to reproduce them
+- [ ] The evaluation subsection describes how the work is validated
+- [ ] The experimental results section details threats to validity
+- [ ] The discussion and future work section discusses the impact of the
+  conducted work
+- [ ] The conclusion outlines avenues for further and/or future work
+- [ ] The thesis includes at least twelve references
+- [ ] The thesis consists of at least `7500` words
+- [ ] The thesis follows a logical flow
+- [ ] The thesis includes appropriate visual aids, which fall under the broad
+  categories of:
+* `image`
+* `figure`
+* `table`
+* `graph`
+- [ ] There are no typographical or grammatical errors and no extraneous text in
+  the thesis
+- [ ] The thesis was released correctly on GitHub
+- [ ] The thesis uses the correct LaTeX format
 
 ### Explanation of sections
 
