@@ -222,8 +222,7 @@ you would like to receive these updates, then you can type this command in the
 main directory for this assignment:
 
 ```
-git remote add download
-git@github.com:Allegheny-ComputerScience-600-Sum2022/cmpsc-600-senior-thesis.git
+git remote add download git@github.com:ReadyResearchers/cs-600-F2022-610-S2023-senior-thesis-template.git
 ```
 
 You should only need to type this command once; typing the command additional
@@ -235,12 +234,13 @@ course instructor by typing:
 git pull download main --allow-unrelated-histories
 ```
 
-This second command can be run whenever the faculty need to provide you
-with new source code for this assignment. However, please note that, if you
-have
-edited the files that the course instructor updated, running the previous
-command may lead to Git merge conflicts. If this happens, you may need to
-manually resolve them with the help of the instructor or a teaching assistant.
+This second command can be run whenever the faculty need to provide you with new
+source code for this assignment. However, please note that, if you have edited
+the files that the course instructor updated, running the previous command may
+lead to Git merge conflicts. If this happens, you may need to manually resolve
+them with the help of the instructor or a teaching assistant. If you experience
+problems when following these steps for automatically accessing project updates
+you can also manually copy files from this repository to your GitHub repository.
 
 ## Problems
 
