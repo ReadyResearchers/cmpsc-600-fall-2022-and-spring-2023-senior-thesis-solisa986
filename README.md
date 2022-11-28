@@ -105,7 +105,7 @@ it is expected that an exceptional senior thesis will exceed these requirements.
   - [ ] The discussion and future work section reflects on the completed research project
   - [ ] The conclusion outlines avenues for further and/or future work
 
-### Explanation
+## Explanation
 
 Please consult the following sub-sections, as section requirements may have
 changed from requirements in previous years. All descriptions of each section
@@ -125,7 +125,7 @@ ethical issues impact research will vary from project to project. Your first and
 second readers will be able to guide you on a project-by-project basis toward
 responding to the ethics requirements listed below.
 
-#### Introduction
+### Introduction
 
 * a statement of the problem addressed in this research
 * overall project aims
@@ -133,7 +133,7 @@ responding to the ethics requirements listed below.
 * a high-level overview of ethical issues implied by the current state of the
 problem underlying the work
 
-#### Related Works
+### Related Works
 
 * the review of relevant existing work (i.e. "literature review")
 * the literature review should be a concise, scholarly review of the literature
@@ -142,7 +142,7 @@ explaining the background to the proposed research
 relation to existing work on the topic
 * review of ethical discussions referenced in the `Introduction`
 
-#### Method of Approach
+### Method of Approach
 
 * describes the infrastructure and tools implemented to serve, test, and
 support research and conduct experiments
@@ -153,7 +153,7 @@ material is _required_
 address ethical concerns in datasets, software processes, or theoretical
 approaches
 
-#### Experiments
+### Experiments
 
 * displays and discusses evaluative metrics and data used as validation
 strategies the projects
@@ -163,7 +163,7 @@ experiments relative to them
 the research or those introduced by any approaches or data used in the these
 research and implementation process
 
-#### Conclusion
+### Conclusion
 
 * provides a summary of your research and experimental outcomes
 * proposes, where applicable, future areas of work or research indicated by the
