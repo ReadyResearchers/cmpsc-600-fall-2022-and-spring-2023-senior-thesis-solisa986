@@ -235,7 +235,18 @@ senior_thesis-YOUR_USERNAME-0.1.0`.
 3. You are now ready to push your changes with the tag number using  `git push
 -u origin main --tags`
 
-The above steps should build a version of your project.
+The above steps should build a version of your project and release it on
+GitHub! If something does not work correctly, please contact your first and
+second readers and/or the senior thesis faculty coordindator to explain the
+details of the challenges that you faced. It is also important to note that it
+is possible for a student to perform a manual release of the PDF of their senior
+thesis chapters. Again, please communicate with your first and/or second readers
+and/or the senior thesis faculty coordindator for more information about the
+steps you would take to perform a manual release. With that said, it is
+important to stress that you should learn how to perform an automated release of
+your thesis in PDF and only use the manual approach if there is a severe and
+extenuating circumstance (e.g., GitHub Actions stops working for a short time)
+that prevents you from performing an automated release.
 
 When you make subsequent changes to your files and perform commits and you are
 ready to release a new version of `SeniorThesis.pdf`, then you should
