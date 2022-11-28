@@ -42,8 +42,8 @@ it is expected that an exceptional senior thesis will exceed these requirements.
     the GitHub repository of the thesis contains a release greater than `1.0.0`
     for the work in CMPSC 600 and a release greater than `2.0.0` for CMPSC 610
   - [ ] The thesis has the correct format created through the use of Pandoc and
-    LaTeX
-  - [ ] The title of the thesis is both compelling and appropriate
+    LaTeX and the senior thesis template for the Department of Computer Science
+  - [ ] The title of the thesis is both interesting and appropriate
   - [ ] The thesis includes at least twelve references
   - [ ] The thesis consists of at least `7500` words
   - [ ] The thesis follows a logical flow at the level of chapters, sections,
@@ -54,8 +54,9 @@ it is expected that an exceptional senior thesis will exceed these requirements.
   * `figure`
   * `table`
   * `graph`
-  - [ ] There are no typographical or grammatical errors and no extraneous text
-    in the thesis
+  - [ ] The thesis contains a sufficient amount of content with a focus on
+    scientific, technical, engineering, and/or mathematical content
+  - [ ] There are no typographical or grammatical errors in the thesis
   - [ ] There is no extraneous text in the thesis
 
 Introduction Section Requirements:
