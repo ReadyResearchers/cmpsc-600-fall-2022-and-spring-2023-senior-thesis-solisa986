@@ -52,7 +52,7 @@ chapters in CMPSC 610 will be evaluated according to all of the following
 baseline requirements. Please note that these are only baseline requirements and
 it is expected that an exceptional senior thesis will exceed these requirements.
 
-**General Thesis Requirements**:
+**General Thesis Requirements**
   - [ ] The abstract provides a concise and compelling summary of the research
   - [ ] The thesis was submitted on time as a PDF in a tagged release on GitHub
   - [ ] The GitHub repository of the thesis contains evidence of many commits
