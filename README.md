@@ -84,6 +84,11 @@ it is expected that an exceptional senior thesis will exceed these requirements.
   * `platforms`
   * `software tools`
   * `hardware`
+  - [ ] The method section references the GitHub repository that contains the
+    implementation of the project's computational artifact(s)
+  - [ ] The method section gives examples of the input and output of the
+    project's computational artifact(s) and, when appropriate, explains how to
+    run the computational artifact
 
 **Experimental Results Section Requirements**
   - [ ] The experimental results section includes a description of experiments
