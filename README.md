@@ -56,6 +56,8 @@ it is expected that an exceptional senior thesis will exceed these requirements.
   * `graph`
   - [ ] The thesis contains a sufficient amount of content with a focus on
     scientific, technical, engineering, and/or mathematical content
+  - [ ] The thesis highlights and explains the societal impacts and ethical
+    implications of the completed research
   - [ ] There are no typographical or grammatical errors in the thesis
   - [ ] There is no extraneous text in the thesis
 
