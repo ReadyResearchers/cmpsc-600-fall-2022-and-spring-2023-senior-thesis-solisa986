@@ -76,8 +76,8 @@ it is expected that an exceptional senior thesis will exceed these requirements.
 
 **Method Section Requirements**
   - [ ] The method section explains the process utilized in the completed study
-  - [ ] The method section addresses as many of the following which are applicable
-    (minimum `1`):
+  - [ ] The method section addresses as many of the following which are
+    applicable (minimum `1`):
   * `description of algorithms`
   * `programming languages`
   * `libraries`
@@ -88,7 +88,9 @@ it is expected that an exceptional senior thesis will exceed these requirements.
     implementation of the project's computational artifact(s)
   - [ ] The method section gives examples of the input and output of the
     project's computational artifact(s) and, when appropriate, explains how to
-    run the computational artifact
+    run the computational artifact (note that the `README.md` file of the GitHub
+    repository that contains the computational artifact(s) should furnish
+    complete details about the input, output, behavior, and use of the project)
 
 **Experimental Results Section Requirements**
   - [ ] The experimental results section includes a description of experiments
