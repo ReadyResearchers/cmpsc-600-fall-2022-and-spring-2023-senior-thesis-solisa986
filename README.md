@@ -171,16 +171,15 @@ unresolved or created by this research
 
 ## Tagging
 
-Since this repository primarily contains LaTeX source code, the GitHub Actions
-configuration for it will compile the source code and automatically release a
-PDF of the main file whenever the last commit is associated with a [Git
-Tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
+Since this repository primarily contains Markdown and/or LaTeX source code, the
+GitHub Actions configuration for it will compile the source code and
+automatically release a PDF of the main file whenever the last commit is
+associated with a [Git Tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
-This will build a PDF file available in the "Releases" listing
-for this repository. All release numbers for your writing in this repository
-should adhere to the [Semantic Versioning](http://semver.org/) standard
-expected
-of GitHub projects. Here this means that:
+This will build a PDF file available in the "Releases" listing for this
+repository. All release numbers for your writing in this repository should
+adhere to the [Semantic Versioning](http://semver.org/) standard expected of
+GitHub projects. Here this means that:
 
 * `Major version` releases feature a tag number change reflecting full
 releases; generally these start at `1.0.0`
@@ -188,8 +187,7 @@ releases; generally these start at `1.0.0`
 typically these increment the second digit in the version (e.g. `1.1.0`)
 
 Please note that your readers will only read the PDF generated from "tagged"
-releases
-of the file `SeniorThesis.pdf` that has a version number greater than
+releases of the file `SeniorThesis.pdf` that has a version number greater than
 1.0.0.
 
 That is:
