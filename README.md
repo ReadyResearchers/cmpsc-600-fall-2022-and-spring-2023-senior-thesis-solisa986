@@ -59,32 +59,39 @@ it is expected that an exceptional senior thesis will exceed these requirements.
   - [ ] There are no typographical or grammatical errors in the thesis
   - [ ] There is no extraneous text in the thesis
 
-Introduction Section Requirements:
-- [ ] The introduction section clearly describes the completed work
-- [ ] The introduction section motivates the completed work
+**Introduction Section Requirements**
+  - [ ] The introduction section clearly describes the completed work
+  - [ ] The introduction section motivates the completed work from a
+    professional perspective focused on science, technology, engineering,
+    mathematicals, and societal implications
+  - [ ] The introduction section outlines the ethical implications of the thesis
 
-- [ ] The related work section describes relevant literature
-- [ ] The related work section situates the completed project in the broader
-  scope
+**Related Work Section Requirements**
+  - [ ] The related work section references and describes relevant literature
+  - [ ] The related work section explains how relevant literature connects to the thesis
+  - [ ] The related work section does not provide a "laundry list" of the related literature
+  - [ ] The related work section situates the completed project in the broader scope
 
-- [ ] The method section explains the process utilized in the completed study
-- [ ] The method section addresses as many of the following which are applicable
-  (minimum `1`):
-* `description of algorithms`
-* `programming languages`
-* `libraries`
-* `platforms`
-* `software tools`
-* `hardware`
+**Method Section Requirements**
+  - [ ] The method section explains the process utilized in the completed study
+  - [ ] The method section addresses as many of the following which are applicable
+    (minimum `1`):
+  * `description of algorithms`
+  * `programming languages`
+  * `libraries`
+  * `platforms`
+  * `software tools`
+  * `hardware`
 
-- [ ] The experimental results section includes a description of experiments
-  such that a reader should be able to reproduce them
-- [ ] The evaluation subsection describes how the work is validated
-- [ ] The experimental results section details threats to validity
-- [ ] The discussion and future work section discusses the impact of the
-  conducted work
-- [ ] The conclusion outlines avenues for further and/or future work
+**Experimental Results Section Requirements**
+  - [ ] The experimental results section includes a description of experiments
+    such that a reader should be able to reproduce them
+  - [ ] The evaluation subsection describes how the work is validated
+  - [ ] The experimental results section details threats to validity
 
+**Experimental Results Section Requirements**
+  - [ ] The discussion and future work section discusses the impact of the conducted work
+  - [ ] The conclusion outlines avenues for further and/or future work
 
 ### Explanation of sections
 
