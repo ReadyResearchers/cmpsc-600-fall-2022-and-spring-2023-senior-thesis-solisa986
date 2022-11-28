@@ -31,19 +31,41 @@ requirements_ please refer to the following list for the entire senior thesis.
 Please note that your senior thesis chapters in CMPSC 600 will be evaluated
 according to the content that you submit in that course and your senior thesis
 chapters in CMPSC 610 will be evaluated according to all of the following
-requirements.
+baseline requirements. Please note that these are only baseline requirements and
+it is expected that an exceptional senior thesis will exceed these requirements.
 
 General Thesis Requirements:
-  - [ ] The thesis was submitted on time
-  - [ ] The title of the thesis is appropriate
-  - [ ] The abstract provides a concise summary
+  - [ ] The abstract provides a concise and compelling summary of the research
+  - [ ] The thesis was submitted on time as a PDF in a tagged release on GitHub
+  - [ ] The GitHub repository of the thesis contains evidence of many commits
+  - [ ] The GitHub repository of the thesis contains multiple releases using the
+    [Semantic Versioning Standard](https://semver.org/)
+  - [ ] In adherence to the [Semantic Versioning Standard](https://semver.org/),
+    the GitHub repository of the thesis contains a release greater than `1.0.0`
+    for the work in CMPSC 600 and a release greater than `2.0.0` for CMPSC 610
+  - [ ] The thesis has the correct format created through the use of Pandoc
+    and LaTeX
+  - [ ] The title of the thesis is both compelling and appropriate
+  - [ ] The thesis includes at least twelve references
+  - [ ] The thesis consists of at least `7500` words
+  - [ ] The thesis follows a logical flow
+  - [ ] The thesis includes appropriate visual aids, which fall under the broad
+    categories of:
+  * `image`
+  * `figure`
+  * `table`
+  * `graph`
+  - [ ] There are no typographical or grammatical errors and no extraneous text in
+    the thesis
 
 Introduction Section Requirements:
 - [ ] The introduction section clearly describes the completed work
 - [ ] The introduction section motivates the completed work
+
 - [ ] The related work section describes relevant literature
 - [ ] The related work section situates the completed project in the broader
   scope
+
 - [ ] The method section explains the process utilized in the completed study
 - [ ] The method section addresses as many of the following which are applicable
   (minimum `1`):
@@ -53,6 +75,7 @@ Introduction Section Requirements:
 * `platforms`
 * `software tools`
 * `hardware`
+
 - [ ] The experimental results section includes a description of experiments
   such that a reader should be able to reproduce them
 - [ ] The evaluation subsection describes how the work is validated
@@ -60,19 +83,7 @@ Introduction Section Requirements:
 - [ ] The discussion and future work section discusses the impact of the
   conducted work
 - [ ] The conclusion outlines avenues for further and/or future work
-- [ ] The thesis includes at least twelve references
-- [ ] The thesis consists of at least `7500` words
-- [ ] The thesis follows a logical flow
-- [ ] The thesis includes appropriate visual aids, which fall under the broad
-  categories of:
-* `image`
-* `figure`
-* `table`
-* `graph`
-- [ ] There are no typographical or grammatical errors and no extraneous text in
-  the thesis
-- [ ] The thesis was released correctly on GitHub
-- [ ] The thesis uses the correct LaTeX format
+
 
 ### Explanation of sections
 
