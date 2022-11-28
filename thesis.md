@@ -1,13 +1,15 @@
 # Template description
 
-This repository contains the starter materials for your thesis in Computer Science 600 and 610 
-in Summer 2022 academic term. The main directory of this repository contains the Markdown template
-for a project that is designed for use with GitHub Classroom. To learn more about the course in 
-which these assignments were completed, please visit the 
-[Computer Science Thesis Summer 2022 Allegheny College GitHub Organization](https://github.com/Allegheny-ComputerScience-600-Sum2022).
+This repository contains the starter materials for your thesis in Computer
+Science 600 and 610 in Fall 2022  and Spring 2023 academic term. The main
+directory of this repository contains the Markdown template for a project that
+is designed for use with GitHub Classroom. To learn more about the course in
+which these assignments were completed, please visit the [Computer Science
+Thesis Summer 2022 Allegheny College GitHub
+Organization](https://github.com/Allegheny-ComputerScience-600-Sum2022).
 
 The template specifies various settings in the `config.yaml` file included in the
-repository. Change the appropriate values under the `Project-specific values` 
+repository. Change the appropriate values under the `Project-specific values`
 heading. Changing other values outside of that section may cause the project to
 fail to build. **Modify these values at your own risk.**
 
@@ -63,7 +65,7 @@ with markup denoting `LaTeX`. For example:
 ```
 Checkmark character:   $\checkmark$
 Superscript character: $^{\dag}$
-``` 
+```
 
 If using a special package not included in the template, add the desired `LaTeX`
 package or command/macro to the `header-includes` property in [config.yaml](config.yaml).
@@ -75,12 +77,12 @@ Direct any questions about issues to your first reader.
 
 # Introduction
 
-This chapter describes your completed senior thesis work, 
-including the overall aims  and the background motivating your research. Whenever 
-possible, you should use one or more concrete examples and technical diagrams. 
+This chapter describes your completed senior thesis work,
+including the overall aims  and the background motivating your research. Whenever
+possible, you should use one or more concrete examples and technical diagrams.
 
-It is often useful and necessary to separate the introduction into multiple sections. 
-Several possible sections are proposed below, you can use these or distribute your 
+It is often useful and necessary to separate the introduction into multiple sections.
+Several possible sections are proposed below, you can use these or distribute your
 introductory text into sections in another way.
 
 The headings below propose _one way_ you might structure this section of the document.
@@ -112,21 +114,21 @@ In addition, reflect on ways that the above harms can be or are mitigated by you
 
 # Related work
 
-This chapter includes a broad and detailed review of relevant existing work. 
-The literature review should provide background and context for the thesis work. 
+This chapter includes a broad and detailed review of relevant existing work.
+The literature review should provide background and context for the thesis work.
 The subsections may be organized in whatever manner seems best suited to the material--
-chronological, or by topic, or according to some other criteria 
+chronological, or by topic, or according to some other criteria
 (e.g., primary versus secondary resources).
 
-If ethical issues are central to this work, you should also address historical and 
+If ethical issues are central to this work, you should also address historical and
 contemporary issues or efforts made to address them.
 
 # Method of approach
 
-This chapter answers the "how" question - how did you complete your project, 
-including the overall design of your study, details of the algorithms and tools you 
-have used, etc.  Use technical diagrams, equations, algorithms, and paragraphs of text 
-to describe the research that you have completed. Be sure to number all figures and 
+This chapter answers the "how" question - how did you complete your project,
+including the overall design of your study, details of the algorithms and tools you
+have used, etc.  Use technical diagrams, equations, algorithms, and paragraphs of text
+to describe the research that you have completed. Be sure to number all figures and
 tables and to explicitly refer to them in your text.
 
 This should contain:
@@ -142,13 +144,13 @@ actively mitigated or considered these issues.
 
 # Experiments
 
-This chapter describes your experimental set up and evaluation. It should also 
+This chapter describes your experimental set up and evaluation. It should also
 produce and describe the results of your study. The section titles below offer
 a typical structure used for this chapter.
 
 ## Experimental Design
 
-Especially as it pertains to responisble computing, if conducting experiments or 
+Especially as it pertains to responisble computing, if conducting experiments or
 evaluations that involve particular ethical considerations, detail those issues here.
 
 ## Evaluation
@@ -157,9 +159,9 @@ evaluations that involve particular ethical considerations, detail those issues 
 
 # Conclusion
 
-Traditionally, this chapter addresses the areas proposed below as sections, although 
+Traditionally, this chapter addresses the areas proposed below as sections, although
 not necessarily in this order or organized as offered. However, the last section --
-"Ethical Implcations" is required for this chapter. See the heading below for more 
+"Ethical Implcations" is required for this chapter. See the heading below for more
 details.
 
 ## Summary of Results
