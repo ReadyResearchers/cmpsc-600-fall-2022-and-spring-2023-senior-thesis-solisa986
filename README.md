@@ -252,14 +252,9 @@ the green "New Issue" button. To ensure that your issue is properly resolved,
 please provide as many details as is possible about the problem that you
 experienced.
 
-Students who find, and use the appropriate GitHub issue tracker to correctly
-document, a mistake in any aspect of this laboratory assignment will receive
-free laptop stickers and extra credit towards their grade for it.
-
 ## Assistance
 
 If you are having trouble completing any part of this project, then please talk
-with your first reader. In particular, if you have questions about your
-research project, please
-see your first reader. Alternatively, you may ask questions in the Slack
-channel for this course.
+with your first reader. In particular, if you have questions about your research
+project, please see your first reader. Alternatively, you may ask questions in
+the Discord server for this course.
