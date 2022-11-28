@@ -246,7 +246,7 @@ you can also manually copy files from this repository to your GitHub repository.
 
 If you have found a problem with this assignment's provided source code, then
 you can go to the [Computer Science 600/610 Thesis
-starter](git@github.com:Allegheny-ComputerScience-600-Sum2022/cmpsc-600-senior-thesis.git)
+Starter](https://github.com/ReadyResearchers/cs-600-F2022-610-S2023-senior-thesis-template)
 repository and create an issue by clicking the "Issues" tab and then clicking
 the green "New Issue" button. To ensure that your issue is properly resolved,
 please provide as many details as is possible about the problem that you
