@@ -85,7 +85,7 @@ it is expected that an exceptional senior thesis will exceed these requirements.
   - [ ] The introduction section clearly describes the completed work
   - [ ] The introduction section motivates the completed work from a
     professional perspective focused on science, technology, engineering,
-    mathematicals, and societal implications
+    mathematics, and societal implications
   - [ ] The introduction section outlines the ethical implications of the thesis
 
 **Related Work Section Requirements**
