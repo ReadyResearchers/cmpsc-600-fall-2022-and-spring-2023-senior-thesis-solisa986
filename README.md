@@ -119,9 +119,9 @@ it is expected that an exceptional senior thesis will exceed these requirements.
   - [ ] The experimental results section details threats to validity
 
 **Discussion and Future Work Section Requirements**
-  - [ ] The discussion and future work section discusses the impact of the conducted work
-  - [ ] The discussion and future work section reflects on the completed research project
-  - [ ] The conclusion outlines avenues for further and/or future work
+  - [ ] The discussion and future work section discusses the impact of the completed research project
+  - [ ] The discussion and future work section critically reflects on the completed research project
+  - [ ] The conclusion outlines, with sufficient depth and detail, avenues for further and/or future work
 
 ## Explanation
 
