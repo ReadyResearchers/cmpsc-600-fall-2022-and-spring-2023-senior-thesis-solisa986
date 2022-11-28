@@ -96,11 +96,11 @@ it is expected that an exceptional senior thesis will exceed these requirements.
   - [ ] The discussion and future work section reflects on the completed research project
   - [ ] The conclusion outlines avenues for further and/or future work
 
-### Explanation of sections
+### Explanation of Sections
 
-Please consult the following sub-sections, as section requirements have changed
-from requirements in previous years. All descriptions of each section are
-delimited by the understanding that sections should "include, but not be
+Please consult the following sub-sections, as section requirements may have
+changed from requirements in previous years. All descriptions of each section
+are delimited by the understanding that sections should "include, but not be
 limited to" the areas highlighted.
 
 Also keep in mind that the typical instruction to
@@ -112,9 +112,9 @@ applies across _all_ relevant sections listed below.
 
 A final note about requirements: nearly all of the sections requests some
 discussion of ethical implications inherent in projects. The ways in which
-ethical issues impact research will vary from project to project. Readers will
-be able to guide students on a project-by-project basis toward responding to
-the ethics requirements listed below.
+ethical issues impact research will vary from project to project. Your first and
+second readers will be able to guide you on a project-by-project basis toward
+responding to the ethics requirements listed below.
 
 #### Introduction
 
@@ -128,7 +128,7 @@ problem underlying the work
 
 * the review of relevant existing work (i.e. "literature review")
 * the literature review should be a concise, scholarly review of the literature
-explaining the background to the proposed research 
+explaining the background to the proposed research
 * the review should provide the context for the aims of the research in
 relation to existing work on the topic
 * review of ethical discussions referenced in the `Introduction`
@@ -164,10 +164,10 @@ unresolved or created by this research
 
 ## Tagging
 
-Since this repository primarily contains LaTeX source code, the GitHub Actions 
+Since this repository primarily contains LaTeX source code, the GitHub Actions
 configuration for it will compile the source code and automatically release a
 PDF of the main file whenever the last commit is associated with a [Git
-Tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging). 
+Tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
 This will build a PDF file available in the "Releases" listing
 for this repository. All release numbers for your writing in this repository
@@ -181,13 +181,13 @@ releases; generally these start at `1.0.0`
 typically these increment the second digit in the version (e.g. `1.1.0`)
 
 Please note that your readers will only read the PDF generated from "tagged"
-releases 
+releases
 of the file `SeniorThesis.pdf` that has a version number greater than
-1.0.0. 
+1.0.0.
 
 That is:
 
-* if your commit is tagged `SeniorThesis-chompers-1.0.0`, then 
+* if your commit is tagged `SeniorThesis-chompers-1.0.0`, then
 * the file `SeniorThesis.pdf` should be available for download in the
 "Releases" tab in your GitHub repository for this project under the name
 `SeniorThesis-chompers-1.0.0`.
@@ -198,7 +198,7 @@ the
 
 1. `commit` your file changes using a `git commit` command
 2. create your first tag for this repository: type `git tag
-senior_thesis-YOUR_USERNAME-0.1.0`. 
+senior_thesis-YOUR_USERNAME-0.1.0`.
 3. You are now ready to push your changes with the tag number using  `git push
 -u origin main --tags`
 
@@ -207,7 +207,7 @@ The above steps should build a version of your project.
 When you make subsequent changes to your files and perform commits and you are
 ready to release a new version of `SeniorThesis.pdf`, then you should
 again tag your work _before a `push` command_ with a tag that
-adheres to the [Semantic Versioning](http://semver.org/) standard. 
+adheres to the [Semantic Versioning](http://semver.org/) standard.
 
 Each time that you correctly execute this sequence of commands you will release
 a new
