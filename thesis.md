@@ -3,10 +3,8 @@
 This repository contains the starter materials for your thesis in Computer
 Science 600 and 610 in Fall 2022  and Spring 2023 academic term. The main
 directory of this repository contains the Markdown template for a project that
-is designed for use with GitHub Classroom. To learn more about the course in
-which these assignments were completed, please visit the [Computer Science
-Thesis Summer 2022 Allegheny College GitHub
-Organization](https://github.com/Allegheny-ComputerScience-600-Sum2022).
+is designed for use with GitHub Classroom. To learn more about the course
+in which these assignments were completed, please refer to the `README.md` file.
 
 The template specifies various settings in the `config.yaml` file included in the
 repository. Change the appropriate values under the `Project-specific values`
