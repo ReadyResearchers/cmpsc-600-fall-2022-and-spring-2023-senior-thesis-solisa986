@@ -227,8 +227,7 @@ That is:
 `SeniorThesis-chompers-1.0.0`.
 
 To ensure you can create a release appropriately, make a single small change to
-the
-`SeniorThesis.tex` and:
+the `thesis.md` and:
 
 1. `commit` your file changes using a `git commit` command
 2. create your first tag for this repository: type `git tag
