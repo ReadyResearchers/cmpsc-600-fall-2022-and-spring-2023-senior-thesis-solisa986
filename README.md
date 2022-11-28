@@ -52,7 +52,7 @@ chapters in CMPSC 610 will be evaluated according to all of the following
 baseline requirements. Please note that these are only baseline requirements and
 it is expected that an exceptional senior thesis will exceed these requirements.
 
-**General Thesis Requirements**
+**General Thesis Requirements**:
   - [ ] The abstract provides a concise and compelling summary of the research
   - [ ] The thesis was submitted on time as a PDF in a tagged release on GitHub
   - [ ] The GitHub repository of the thesis contains evidence of many commits
@@ -65,6 +65,9 @@ it is expected that an exceptional senior thesis will exceed these requirements.
     LaTeX and the senior thesis template for the Department of Computer Science
   - [ ] The title of the thesis is both interesting and appropriate
   - [ ] The thesis includes at least twelve references
+  - [ ] Unless there is a convincing reason to require otherwise, each chapter
+    in the senior thesis should contain at least ten to twenty pages of
+    contents formatting in the required style
   - [ ] The thesis consists of at least `7500` words
   - [ ] The thesis follows a logical flow at the level of chapters, sections,
     subsections, and individual paragraphs
