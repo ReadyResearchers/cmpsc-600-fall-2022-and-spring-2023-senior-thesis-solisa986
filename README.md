@@ -116,8 +116,8 @@ it is expected that an exceptional senior thesis will exceed these requirements.
   - [ ] The experimental results section includes a description of experiments
     such that a reader should be able to reproduce them
   - [ ] The evaluation subsection describes how the work is validated
-  - [ ] The evaluation subsection contains a graph, table of data, or some other
-    relevant presentation of the results from the experimental study
+  - [ ] The evaluation subsection contains at least one graph, table of data, or
+    some other relevant presentation of the results from the experimental study
   - [ ] The experimental results section details threats to validity
 
 **Discussion and Future Work Section Requirements**
