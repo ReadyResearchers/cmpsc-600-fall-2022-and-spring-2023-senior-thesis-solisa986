@@ -34,7 +34,7 @@ chapters in CMPSC 610 will be evaluated according to all of the following
 baseline requirements. Please note that these are only baseline requirements and
 it is expected that an exceptional senior thesis will exceed these requirements.
 
-General Thesis Requirements:
+**General Thesis Requirements**:
   - [ ] The abstract provides a concise and compelling summary of the research
   - [ ] The thesis was submitted on time as a PDF in a tagged release on GitHub
   - [ ] The GitHub repository of the thesis contains evidence of many commits
@@ -43,20 +43,22 @@ General Thesis Requirements:
   - [ ] In adherence to the [Semantic Versioning Standard](https://semver.org/),
     the GitHub repository of the thesis contains a release greater than `1.0.0`
     for the work in CMPSC 600 and a release greater than `2.0.0` for CMPSC 610
-  - [ ] The thesis has the correct format created through the use of Pandoc
-    and LaTeX
+  - [ ] The thesis has the correct format created through the use of Pandoc and
+    LaTeX
   - [ ] The title of the thesis is both compelling and appropriate
   - [ ] The thesis includes at least twelve references
   - [ ] The thesis consists of at least `7500` words
-  - [ ] The thesis follows a logical flow
+  - [ ] The thesis follows a logical flow at the level of chapters, sections,
+    subsections, and individual paragraphs
   - [ ] The thesis includes appropriate visual aids, which fall under the broad
     categories of:
   * `image`
   * `figure`
   * `table`
   * `graph`
-  - [ ] There are no typographical or grammatical errors and no extraneous text in
-    the thesis
+  - [ ] There are no typographical or grammatical errors and no extraneous text
+    in the thesis
+  - [ ] There is no extraneous text in the thesis
 
 Introduction Section Requirements:
 - [ ] The introduction section clearly describes the completed work
