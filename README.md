@@ -2,6 +2,24 @@
 
 [![Release Senior Thesis](../../actions/workflows/main.yml/badge.svg)](../../actions/workflows/main.yml)
 
+## Table of Contents
+
+* [Introduction](#introduction)
+* [Overview](#overview)
+* [Requirements](#requirements)
+* [Explanation](#explanation)
+  + [Introduction](#introduction-1)
+  + [Related Works](#related-works)
+  + [Method of Approach](#method-of-approach)
+  + [Experiments](#experiments)
+  + [Conclusion](#conclusion)
+* [Tagging](#tagging)
+* [Updates](#updates)
+* [Problems](#problems)
+* [Assistance](#assistance)
+
+## Introduction
+
 This repository contains the starter for the Senior Thesis Proposal document.
 This document compiles using GitHub Actions; students should write the entirety
 of their document using the `abstract.md` and `thesis.md` files. The template
