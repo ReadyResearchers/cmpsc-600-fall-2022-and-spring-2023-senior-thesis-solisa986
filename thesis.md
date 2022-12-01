@@ -87,6 +87,8 @@ The headings below propose _one way_ you might structure this section of the doc
 
 ## Motivation
 
+add section here
+
 ## Current State of the Art
 
 ## Goals of the Project
