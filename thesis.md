@@ -1,4 +1,4 @@
-# Template description
+[//]: <> (# Template description
 
 This repository contains the starter materials for your thesis in Computer
 Science 600 and 610 in Fall 2022  and Spring 2023 academic term. The main
@@ -71,7 +71,7 @@ package or command/macro to the `header-includes` property in [config.yaml](conf
 Should this package not be included in the environment shipped with this template,
 you may also need to add the package to the [GitHub Actions Workflow](.github/workflows/main.yml).
 
-Direct any questions about issues to your first reader.
+Direct any questions about issues to your first reader.)
 
 # Introduction
 
