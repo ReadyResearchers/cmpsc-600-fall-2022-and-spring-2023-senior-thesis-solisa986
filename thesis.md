@@ -16,23 +16,6 @@ identify what you wish to accomplish with your project
 
 ## Ethical Implications
 
-This document requires that you discuss the ethical implications of your work -- no
-matter how benign you consider the outcome of your project. As several major studies
-of ethical issues in computer science assert: _no project is completely value-neutral_.
-
-To assist you in elaborating on these issues, the following areas are topics you might
-consider addressing. You do not need to address all of them.
-
-* Information Privacy
-* Information Accuracy (e.g. can contain reliability)
-* Potential Misuse (e.g. computer crime, unintended consequences)
-* Second- or Third-Party Risk (e.g. safety)
-* Data Collection Issues (e.g. issues inherent in collecting data)
-* Algorithmic or Data Bias
-* Potential Power Difference / Social Imbalance / Issues in Equity
-
-In addition, reflect on ways that the above harms can be or are mitigated by your work
-
 As this paper relies heavily on the collection and analysis of movie data, streaming data, and the structure of the rating data, this section will outline the ethical implications that arose during the construction of this project. All of the data that is collected were from third party sources -- Opus Data, IMDB, Kaggle, and Statista. As the data was collected independently from the researchers of this paper, then the garnering of data does not have an immediate affect towards the ethical implications of the data.
 
 However, with the contents of this data, therein lies ethical complications with the subjects being analyzed in the data. The actors, the directors, and the movie itself can be ethically violated with the results given by the data. Additionally, the groups of people that were analyzed for the rating structure can also be considered in regard to the ethics of this research, as they are being used as the basis for the analysis of the personalized component for movies. The people that leave reviews and/or contribute to the box office sales of the movies can also be noted, as they have an indirect impact on the success of movies. These three different subgroups of people are to be considered when dealing with the ethical implications of this paper.
@@ -43,44 +26,19 @@ For information accuracy, all three subgroups are ethically affected and should 
 
 # Related work
 
-This chapter includes a broad and detailed review of relevant existing work.
-The literature review should provide background and context for the thesis work.
-The subsections may be organized in whatever manner seems best suited to the material--
-chronological, or by topic, or according to some other criteria
-(e.g., primary versus secondary resources).
-
-If ethical issues are central to this work, you should also address historical and
-contemporary issues or efforts made to address them.
+add the related work section here.
 
 # Method of approach
 
-This chapter answers the "how" question - how did you complete your project,
-including the overall design of your study, details of the algorithms and tools you
-have used, etc.  Use technical diagrams, equations, algorithms, and paragraphs of text
-to describe the research that you have completed. Be sure to number all figures and
-tables and to explicitly refer to them in your text.
-
-This should contain:
-
-* lists
-* with points
-* and more points
-  * possibly subpoints
-
-For those projects whose implications address social or moral issues (i.e. ethical
-standards, causes, effects), you will want to use this section to describe how you
-actively mitigated or considered these issues.
+add the method of approach here.
 
 # Experiments
 
-This chapter describes your experimental set up and evaluation. It should also
-produce and describe the results of your study. The section titles below offer
-a typical structure used for this chapter.
+add the experiments here.
 
 ## Experimental Design
 
-Especially as it pertains to responisble computing, if conducting experiments or
-evaluations that involve particular ethical considerations, detail those issues here.
+add the experimental design here.
 
 ## Evaluation
 
@@ -88,10 +46,7 @@ evaluations that involve particular ethical considerations, detail those issues 
 
 # Conclusion
 
-Traditionally, this chapter addresses the areas proposed below as sections, although
-not necessarily in this order or organized as offered. However, the last section --
-"Ethical Implcations" is required for this chapter. See the heading below for more
-details.
+add the conclusion here.
 
 ## Summary of Results
 
@@ -99,8 +54,7 @@ details.
 
 ## Future Ethical Implications and Recommendations
 
-Especially as pertains to the public release or use of your software or methods, what
-unresolved or special issues remain? What recommendations might you make?
+add future ethics concerns here.
 
 ## Conclusions
 
