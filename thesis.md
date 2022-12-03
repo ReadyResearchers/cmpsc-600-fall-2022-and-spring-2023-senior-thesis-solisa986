@@ -26,9 +26,9 @@ bring up the streamlit application and how this will be a solution to the knowle
 
 
 
-![Movie Data from OpusData](images/opus_data.jpg =200x200)
+![Movie Data from OpusData](images/opus_data.jpg)
 
-![Total Movie Revenue](images/revenue_histogram.png =200x200)
+![Total Movie Revenue](images/revenue_histogram.png)
 
 ### Challenges to Proposed Research
 
