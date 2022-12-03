@@ -24,7 +24,8 @@ describe how my application will be different from previous research and why tha
 
 bring up the streamlit application and how this will be a solution to the knowledge gap
 
-![Movie Data from OpusData](images/opus_data.jpg)
+
+<img src="images/opus_data.jpg" alt="Movie Data from Opus Data" width="200"/>
 
 ![Total Movie Revenue](images/revenue_histogram.png)
 
