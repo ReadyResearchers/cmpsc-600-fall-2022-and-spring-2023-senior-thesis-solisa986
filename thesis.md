@@ -23,9 +23,9 @@ This proposed area of research will focus on essentially the same principles, wh
 
 In order to deliver this need for personable movie/tv show recommendations, this research will go a bit further than previous research by linking the machine learning tool to an API (application programming interface). This API will provide an interactive interface for two sectors of potential users and will provide a simplified way for said users to access the necessary information that they need about movies. For the first sector of users, the public users, they will be able to utilize this tool to determine what predicted list of movies they will be more likely to enjoy. This can be done through by using the movie data (see Figure 1) collected to train the machine learning model, similar to the way that previous research did; the methodology involved in this process will be elaborated on later on in this paper. 
 
-![Extract of Movie Data from OpusData](images/opus_data.jpg)
-
 Then, once this model has been trained and tested for accuracy, it will be linked to the Streamlit API. Once this is linked, the factors needed for the model to predict movie success will be transformed into simple questions on the user-end. These questions will be plugged into the trained model, where we will save the movies *utilized* in the prediction process into cloud-managed file system. As the movies were referenced by the model to come up with the prediction rate percentage, then it can be inferred that these movies were similar enough to the chosen factors outlined by the user. This list of movies will then be condensed into a pdf document, of which the user will be able to see on the API. This pdf will be the list of movies that fit the criteria that was collected from the questions, which users will be able to download. This is a similar process for the other sector of users, the industry users, except for the ending result. The ending result for this user will be the liklihood of movie success given the certain criteria, along with some graphic visuals to demonstrate the results delivered by the machine learning model, similar to Figure 2. There will be a user portal that will distinguish whether the user wants to be a public or industry user.
+
+![Extract of Movie Data from OpusData](images/opus_data.jpg)
 
 ![Total Movie Revenue](images/revenue_histogram.png)
 
