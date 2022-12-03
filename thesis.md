@@ -12,31 +12,30 @@ As movies are an integral part of the way that people spend their leisure time, 
 
 This section of the research paper will be an in-depth analysis of the key points of movie research, what knowledge gap is left from prior research, the way that this research will provide further insight, and any challenges that have been made to this research/prior research.
 
-### Key Past Research
+### Past Areas of Research and Knowledge Gap
 
-explain how other implementations of this research has been
+Some noteable areas of research that the movie industry is involved in is the predication of movie success. For most of the experiments conducted by other data scientists, their final deliverable was a working tool that would be able to accurately predict movies, where [@movie_success_1]'s experiments were meant to "predict the gross box office revenue to the nearest ten’s of million" and to "predict if the movie would make money, not by a specific amount, just if the budget was smaller
+than the revenue from ticket sales". This tool would then be used and evaluated based on a specific percentage of accuracy in their machine learning model. Most of the research conducted has hovered at around the 60-64.7% range for accuracy of their models, and oftentimes are building off of previous research's machine learning models. Since most of the research conducted in this area is mainly built off of each other and provides only data-fueled results (nothing interactive for users to see/use), then there is a considerable amount of additional research that needs to be conducted to further understand what can affect the success of a movie.
 
-### Knowledge Gap in Past Research
-
-describe how my application will be different from previous research and why that is so -- knowledge gap for the machine learning predicators
+This proposed area of research will focus on essentially the same principles, where the machine learning tool will be trained using movie data in order to provide a prediction of movie success. However, the knowledge gap that exists in this area of research is identified as the lack of an interactive application or software that users can use to run the classification of data theirselves. Essentially, a way for the machine learning model to be able to be used by more than just the researchers, but instead also public users and movie industry personnel. This is the next step that should be taken for this sector of research, as there is an increasing demand for unique and personal movie/tv show recommendations.
 
 ### Proposed Solution to Knowledge Gap
 
-bring up the streamlit application and how this will be a solution to the knowledge gap
+In order to deliver this need for personable movie/tv show recommendations, this research will go a bit further than previous research by linking the machine learning tool to an API (application programming interface). This API will provide an interactive interface for two sectors of potential users and will provide a simplified way for said users to access the necessary information that they need about movies. For the first sector of users, the public users, they will be able to utilize this tool to determine what predicted list of movies they will be more likely to enjoy. This can be done through by using the movie data (see Figure 1) collected to train the machine learning model, similar to the way that previous research did; the methodology involved in this process will be elaborated on later on in this paper. 
 
+![Extract of Movie Data from OpusData](images/opus_data.jpg)
 
-
-![Movie Data from OpusData](images/opus_data.jpg)
+Then, once this model has been trained and tested for accuracy, it will be linked to the Streamlit API. Once this is linked, the factors needed for the model to predict movie success will be transformed into simple questions on the user-end. These questions will be plugged into the trained model, where we will save the movies *utilized* in the prediction process into cloud-managed file system. As the movies were referenced by the model to come up with the prediction rate percentage, then it can be inferred that these movies were similar enough to the chosen factors outlined by the user. This list of movies will then be condensed into a pdf document, of which the user will be able to see on the API. This pdf will be the list of movies that fit the criteria that was collected from the questions, which users will be able to download. This is a similar process for the other sector of users, the industry users, except for the ending result. The ending result for this user will be the liklihood of movie success given the certain criteria, along with some graphic visuals to demonstrate the results delivered by the machine learning model, similar to Figure 2. There will be a user portal that will distinguish whether the user wants to be a public or industry user.
 
 ![Total Movie Revenue](images/revenue_histogram.png)
 
 ### Challenges to Proposed Research
 
-talk about any challenges that may arise from your implementation of the tool
+The challenges with the proposed area of research is that, similar to the results of past research, the accuracy of the machine learning model will be somewhat limited (where the accuracy is expected to be at around 64.7% or higher). This can cause skewed movie recommendations/results for the users. Additionally, as the movie industry is constantly changing and being added to (with the release of new movies and tv shows annually), then there is a risk that the trained model will expire in it's usefulness since the datasets used would be outdated. To combat these challenges, this research will focus most of it's data collection on datasets that are being continously/newly updated. For example, the IMDB dataset that contains information about movie personnel and other relevant information is updated daily. However, this runs the risk of the model becoming too slow to function, as it will have to process and go through more movies in order to get it's results. Therefore, the datasets will be stored in cache instead of the model's memory, so that the cached results and pathways can be reset with each refresh of the dataset. This way, the model will stay as relevant as possible and will not be too slow once more users are able to use the API.
 
 ## Goals of the Project
 
-As most of the project is dedicated towards predicating movie success and providing a more unique movie experience, then the main goal is to create a simplified application that users can navigate to for either result that they desire. Therefore, the creation of an application was required, which is where Streamlit comes into play. Streamlit is "an open-source Python library that makes it easy to create and share beautiful, custom web apps for machine learning and data science" [@streamlit]. 
+As most of the project is dedicated towards predicating movie success and providing a more unique movie experience, then the main goal is to create a simplified application that users can navigate to for either result that they desire. Therefore, the creation of an application was required, which is where Streamlit comes into play. Streamlit is an open-source Python library where data scientists can create custom web apps for machine learning and data science. Since Streamlit already contains a machine-learning algorithm library and toolkit, the implementation of the machine learning aspect with the API will be smooth. Additionally, the API will be able to be personalized to enhance the user's experience with the application.
 
 ## Ethical Implications
 
