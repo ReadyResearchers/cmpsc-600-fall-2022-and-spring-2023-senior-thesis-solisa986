@@ -12,6 +12,8 @@ The headings below propose _one way_ you might structure this section of the doc
 
 ## Motivation
 
+There has been a giant leap in the amount of movies being produced, especially with streaming platforms starting to create their own movies/tv shows as well. With this leap also came a drastic change in the success of movies, as the preferences and criteria for movies had changed, with respect to the consumers. With this analysis, it can be determined that the weight of past research does not necessarily continue to define what exactly makes movies and tv shows successful for the movie industry. Therefore, this paper serves to provide an analysis of the different factors that can affect movie success, with the final result being a trained model that can predict the success of a movie based on the evaluated factors. The factors that will be evaluated will be the actors, the genre, the director, the production budget, the overall revenue, and the main source of revenue (domestic, international, etc.). As streaming is the focal point of the personalization of the movie industry, we will also evaluate whether these factors comply with the movie trends on certain streaming platforms, such as Netflix, Hulu, Disney+, and Amazon Prime.
+
 ## Current State of the Art
 
 ## Goals of the Project
