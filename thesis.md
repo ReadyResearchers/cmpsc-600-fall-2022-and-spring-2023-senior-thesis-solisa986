@@ -10,7 +10,14 @@ As movies are an integral part of the way that people spend their leisure time, 
 
 ## Current State of the Art
 
-identify the knowledge gap in research and the challenges that this will bring about your project
+This section of the research paper will be an in-depth analysis of the 
+### Key Past Research
+
+### Knowledge Gap in Past Research
+
+### Proposed Solution to Knowledge Gap
+
+### Challenges to Proposed Research
 
 ## Goals of the Project
 
