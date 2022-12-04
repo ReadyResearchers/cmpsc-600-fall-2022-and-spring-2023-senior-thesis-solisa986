@@ -25,9 +25,11 @@ In order to deliver this need for personable movie/tv show recommendations, this
 
 Then, once this model has been trained and tested for accuracy, it will be linked to the Streamlit API. Once this is linked, the factors needed for the model to predict movie success will be transformed into simple questions on the user-end. These questions will be plugged into the trained model, where we will save the movies *utilized* in the prediction process into cloud-managed file system. As the movies were referenced by the model to come up with the prediction rate percentage, then it can be inferred that these movies were similar enough to the chosen factors outlined by the user. This list of movies will then be condensed into a pdf document, of which the user will be able to see on the API. This pdf will be the list of movies that fit the criteria that was collected from the questions, which users will be able to download. This is a similar process for the other sector of users, the industry users, except for the ending result. The ending result for this user will be the liklihood of movie success given the certain criteria, along with some graphic visuals to demonstrate the results delivered by the machine learning model, similar to Figure 2. There will be a user portal that will distinguish whether the user wants to be a public or industry user.
 
-![Extract of Movie Data from OpusData](images/opus_data.jpg)
+![Extract of Movie Data from IMDB](images/imdb_data.png)
 
-![Total Movie Revenue](images/revenue_histogram.png)
+![Extract of Movie Data from Kaggle](images/netflix_data.png)
+
+![Total Box Office Earnings](images/box_office.png)
 
 ### Challenges to Proposed Research
 

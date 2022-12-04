@@ -261,9 +261,7 @@ a new version of your document to GitHub that is easily accessible as a PDF to
 you and to your first and second readers.
 
 After creating the `log/` and `output/` directories in your project directory,
-you should be able to locally build your senior thesis using the command `pandoc
---defaults pdf.yaml --to latex --metadata-file config.yaml --lua-filter
-.filters/abstract-to-meta.lua --template template/thesis.tex`. Please note that
+you should be able to locally build your senior thesis using the command `pandoc --defaults pdf.yaml --to latex --metadata-file config.yaml --lua-filter .filters/abstract-to-meta.lua --template template/thesis.tex`. Please note that
 you must run this command from the root directory of the project after
 installing both the `pandoc` and `tectonic` packages. If the build of your
 senior thesis works correctly then the local file will be available in the
