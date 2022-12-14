@@ -22,7 +22,7 @@ jobs:
       - name: Resize images
         run: bash resize.sh
       - name: Convert with pandoc
-        run: mkdir log && mkdir output && pandoc --defaults pdf.yaml --to latex --metadata-file config.yaml --lua-filter .filters/abstract-to-meta.lua --template template/thesis.tex --appimage-extract
+        run: mkdir log && mkdir output && pandoc --defaults pdf.yaml --to latex --metadata-file config.yaml --lua-filter .filters/abstract-to-meta.lua --template template/thesis.tex
       - name: Create release
         id: create_release
         uses: actions/create-release@v1
