@@ -131,13 +131,13 @@ This section of the paper will focus on the method of approach towards solving f
 
 In order to gather relevant movie data for analysis, the following sources were used: The Numbers API: Opus, OMDB API, Kaggle, and IMDB. These websites/API's are a host for multiple datasets used for predictive analysis and have been highly regarded among other data scientists. The different data obtained from these sources will be described below. 
 
-The Numbers is a free website that offers its resources to industry professionals, the investment community, and movie fans. These resources consist of tracking business information on movies, where the information gathered on these movies comes from either other free movie information sites (such as IMDB) or from sources in the industry (movie studios) [CITATION]. Through these resources, The Numbers is able to continously update their movie data, as they receive their information/updates on a daily basis. The Numbers collaborates with Opus Data to provide a movie API, where users of this API can obtain updated movie data. In order to not go outside of the scope of this project, this research uses the educational data provided by the API, where this package contains relevelant movie information for 1,900 movies spanning from 2006 to 2018. The dataset contains information on movies for the following: movie name, production year, movie ID, production budget, domestic box office, international box office, rating, creative type, source, production method, genre, sequel, and running time.
+The Numbers is a free website that offers its resources to industry professionals, the investment community, and movie fans. These resources consist of tracking business information on movies, where the information gathered on these movies comes from either other free movie information sites (such as IMDB) or from sources in the industry (movie studios) [@the_numbers]. Through these resources, The Numbers is able to continously update their movie data, as they receive their information/updates on a daily basis. The Numbers collaborates with Opus Data to provide a movie API, where users of this API can obtain updated movie data. In order to not go outside of the scope of this project, this research uses the educational data provided by the API, where this package contains relevelant movie information for 1,900 movies spanning from 2006 to 2018. The dataset contains information on movies for the following: movie name, production year, movie ID, production budget, domestic box office, international box office, rating, creative type, source, production method, genre, sequel, and running time.
 
-As most of the information in this dataset is numerical, then it was decided that obtaining more textual data was necessary to improve the predictive nature of the proposed model. Therefore, Kaggle was used to obtain data on the following streaming services: Netflix, Hulu, Disney +, and Amazon Prime. Kaggle is a free website that offers over 50,000 public datasets and 400,000 public notebooks that are used to perform data analysis tasks and data science work [CITATION]. The specific datasets that were used contained information directly from Netflix, Hulu, Disney +, and Amazon Prime through webscraping done by other Kaggle users. This involves automating a program to visit a website, locating information through the website's HTML tags, and saving the data in a dataset. The chosen Kaggle dataset for Netflix contained all of the movies and TV shows (over 8,000) that were available on Netflix as of October 18th, 2021, with new updates to the data occuring Quarterly. The chosen Kaggle dataset for Hulu contains all of the movies and TV shows available to users, with the data also being updated Quarterly. The chosen Kaggle dataset for Amazon Prime contains information on close to 10000 movies or TV shows available on their platform, with the data being updated Monthly. The chosen Kaggle dataset for Disney+ contains information on 1300 movies or TV shows, with the update to the data occuring quarterly. All of these datasets contain information on the following features of a movie: show ID, type, title, director, cast, country, date added, release year, rating, and duration, listed in (genre), and description.
+As most of the information in this dataset is numerical, then it was decided that obtaining more textual data was necessary to improve the predictive nature of the proposed model. Therefore, Kaggle was used to obtain data on the following streaming services: Netflix, Hulu, Disney +, and Amazon Prime. Kaggle is a free website that offers over 50,000 public datasets and 400,000 public notebooks that are used to perform data analysis tasks and data science work [@kaggle]. The specific datasets that were used contained information directly from Netflix, Hulu, Disney +, and Amazon Prime through webscraping done by other Kaggle users. This involves automating a program to visit a website, locating information through the website's HTML tags, and saving the data in a dataset. The chosen Kaggle dataset for Netflix contained all of the movies and TV shows (over 8,000) that were available on Netflix as of October 18th, 2021, with new updates to the data occuring Quarterly. The chosen Kaggle dataset for Hulu contains all of the movies and TV shows available to users, with the data also being updated Quarterly. The chosen Kaggle dataset for Amazon Prime contains information on close to 10000 movies or TV shows available on their platform, with the data being updated Monthly. The chosen Kaggle dataset for Disney+ contains information on 1300 movies or TV shows, with the update to the data occuring quarterly. All of these datasets contain information on the following features of a movie: show ID, type, title, director, cast, country, date added, release year, rating, and duration, listed in (genre), and description.
 
-In order to display relevant information about movies for the predictive recommendation application, then the OMDB API was used. OMDB API is a free web service that obtains movie information to be used for data analysis and visualization. All content and images saved on the API are contributed and mainted by the users [CITATION]. This API provides information on the following features of a movie: title, year, rated, release date, runtime, genre, director, writer, actors, plot, language, country, awards, poster (image), ratings, metascore, IMDB rating, IMDB ID, type, DVD sales, Box Office earnings, production, and website.
+In order to display relevant information about movies for the predictive recommendation application, then the OMDB API was used. OMDB API is a free web service that obtains movie information to be used for data analysis and visualization. All content and images saved on the API are contributed and mainted by the users [@api]. This API provides information on the following features of a movie: title, year, rated, release date, runtime, genre, director, writer, actors, plot, language, country, awards, poster (image), ratings, metascore, IMDB rating, IMDB ID, type, DVD sales, Box Office earnings, production, and website.
 
-As part of the training of the machine learning model, new data has to be introduced to the model for predictive analysis. IMDB is considered the world's most popular and authoritative source for movies and TV shows, therefore their free public datasets were chosen for implementation [CITATION]. There are a variety of different datasets that are available from IMDB, this paper decided to focus on one particular dataset that contained preliminary information about movies, which is the Title Basics dataset. This dataset contains information on the following features of a movie: title type, primary title, original title, isAdult, start year, end year, runtime (in minutes), and genre. Since the OMDB API only needs the movie title to perform it's searching functions, then the primaryTitle column is the only variable used in this dataset for analysis.
+As part of the training of the machine learning model, new data has to be introduced to the model for predictive analysis. IMDB is considered the world's most popular and authoritative source for movies and TV shows, therefore their free public datasets were chosen for implementation [@imdb]. There are a variety of different datasets that are available from IMDB, this paper decided to focus on one particular dataset that contained preliminary information about movies, which is the Title Basics dataset. This dataset contains information on the following features of a movie: title type, primary title, original title, isAdult, start year, end year, runtime (in minutes), and genre. Since the OMDB API only needs the movie title to perform it's searching functions, then the primaryTitle column is the only variable used in this dataset for analysis.
 
 As the dataset with the most amount of numerical information and reputable sources, the Opus dataset was used for statistical analysis. Before being able to analyze the features, however, the Opus data needed to be cleaned.  Data cleaning is the process of removing incorrect, corrupted, incorrectly formated, or incomplete dat from within a dataset. For data cleaning, the language Python and the Python packages Pandas was used. As it was imperitive to be able to control the number of rows being displayed in the datasets, different functions were created with a rows parameter so that the number of rows to be converted could be controlled. Using the pandas feature 'read_csv', the dataset was transformed into a pandas dataframe. As part of the data cleaning process, the textual data inside of the dataframe is then converted into all lowercase. This make it easier to process the data. In pandas, columns are either inferred from the schema of the dataset or implicitly defined -- for the purposes of this paper, the schema was implicitly defined and the column names were set as the first row of the dataset. In order to ensure accurate analysis of the information provided, any null values (or rows that contained no information) were dropped from the dataframe. Additionally, for the Netflix, Hulu, Disney +, and Amazon Prime dataframes, the rows containing information for TV shows were dropped as well. This is because the analysis of TV shows is outside of the scope of this project. Once only relevant data remained in the dataframes, then the data was converted into their respective data types. For example, the release year column was converted into datetime format. This ensures that the pandas dataframe can be analyzed easier and more efficiently.
 
@@ -172,7 +172,20 @@ As none of the dataframes explicitly had a column that designated whether a movi
 
 ## Data Analysis
 
-Coming soon.
+Since the main part of this paper revolves around the determinants of movie success, then the data analysis had to center around the binary variable 'movie_success'. These binary variables will be analyzed using Binary Logistic Regression, where this models the relationship between a set of independent variables and a binary dependent variable, which is coded as a 1 (movie success) or 0 (not a movie success). This involves the regression model prediciting P(Y=1) as a function of X, where the analysis is the probability that the dependent variable 'movie_success' will take a value of 1 given the independent variables of X. The independent variables used in this regression are categorical and continuous. In order to run the regression on only the statistically significant values, a step-wise linear regression was ran using R Studio Cloud. In this regression, a new variable was created (called total revenue) that was the sum of the domestic box office earnings and the international box office earnings. Through running a simple regression, the following features were found to be statistically significant, as they had a p-value that was less than .05 (this means that there is a 95% confidence level that this feature explains the overall model): production year, production budget, domestic box office, international box office, rating, sequel, running time, genre_Adventure, genre_Action, genre_Black Comedy, genre_Comedy, genre_Concert/Performance, genre_Documentary, genre_Drama, genre_Horror, genre_Musical, genre_Romantic Comedy, genre_Thriller/Suspense, genre_Western. Below are examples of the logistic regressions ran for each of the features being analyzed against movie success.
+
+![Logistic Regression of Production Year on Movie Success](images/prod_year_analysis.png)
+
+![Logistic Regression of Production Brudget on Movie Success](images/prod_budg_analysis.png)
+
+![Logistic Regression of Domestic Box Office on Movie Success](images/dom_office_analysis.png)
+
+
+Since the column of movie success was created using the domestic box office and international box office figures, then these variables were ultimately dropped from the rest of the processing. The following is a graph generated by R Studio Cloud when regressing the residuals of all of the variables against movie success:
+
+![Residual Regression of all Features on Movie Success](images/movie_success_resid.png)
+
+After doing the preliminary data analysis to find the statistically significant features, it was then time to do the machine learning analysis of the data. Machine learning is the process of 'making systems that learn and improve by themselves, by being specifically programmed' [@banoula]. For machine learning all of the statistically significant features were put as the x value, with the y-value being the movie success column. The data was randomized to make sure that it is evenly distributed and that the ordering does not affect the learning process. From there, the data is split into training and testing data. The training data (which is 30% of the total data) is what the machine learning model will learn from, where it will take all of the features included in x and then attempt to guess the possibility of y based on these features. The testing data (which is 70% of the total data) is used to check the accuracy of the model after training. In order to determine the correct machine learning model, the following models were evaluated with the same training/testing data: Linear Regression, Random Forest Regressor, Extra Tree Regressor, Decision Tree Classifier, Support Vector Machine, and Logistic Regression.
 
 ## Technical Diagram
 
@@ -180,20 +193,87 @@ Coming soon.
 
 ## Technical Overview
 
+All of these models contain specific algorithsm that are found in the sci-kit learn package [@scikit-learn]. For each of the regression algorithms chosen, they are fitted against the Opus X training data and the Opus Y training data. Once these two were fitted, the accuracy was evaluated using scikit-learn's 'score' method against Opus X testing data and Opus y testing data. Then, the training data was used to predict the Y column using scikit-learn's 'predict' function. Their accuracy was plotted using [@seaborn]'s and [@matplotlib]'s plotting capabilities. The following graphs are the accuracy scores of the selected 6 regression algorithms:
 
+![Linear Regression Algorithm](images/lin_reg_acc.png)
 
-## Final Evaluation
+![Random Forest Regression Algorithm](images/rand_for_acc.png)
 
----
+![Extra Tree Regression Algorithm](images/extra_tr_acc.png)
+
+![Decision Tree Regression Algorithm](images/dec_tr_acc.png)
+
+![Support Vector Machine Regression Algorithm](images/svm_acc.png)
+
+![Logistic Regression Algorithm](images/log_reg_acc.png)
+
+As the data is split up according to 'movie success' or 'not a movie success', then the Logistic Regression machine learning model was chosen for evaluation. Choosing the correct model is extremely important, as it determines the output of the model as well as the overall accuracy. The Logistic Regression model contains the most accuracte algorithms and can classify binary data, as shown by the most accurate score. In order to use the models for predictive analysis, they were exported into '.sav' files using [@joblib]'s dump method. The files were then exported into another file and were loading into variables using [@joblib]'s load function. Since all of the features used to evaluate the model are needed to make a prediction, then a prediction form was created, using [@streamlit]. All of the choices were saved as inputs for machine learning model, with the determination of the Y value being returned by the model. In order to convert the model's output into a readable format by non-technical users, then 0's were quantified as 'NOT A SUCCESS' and 1's were quantified as 'A SUCCESS'. A simulation of the movie success results form is found below: 
+
+![Snippet of User Interface for Movie Prediction](images/dash_1.png)
+
+![Results of Running Movie Prediction Based on User Choices](images/dash_2.png)
+
+For the rest of the data obtained, as they were composed of mainly textual data, the process of evaluating them was different. All of the Netflix, Amazon Prime, Disney +, and Hulu data was merged into one dataset. From there, all titles classified as a 'TV Show' were removed from processing. The determination of a movie success was rather difficult to determine at first, as there was not numerical data to quanitfy a movie success. However, upon reviewing the literature of how MPAA ratings affect movie revenue, "It is claimed, in fact, that the lower the rating, the higher the profits (Israelsen-Hartley 2010; Palsson et al. 2013)"[@palsson]. Additionally, as this study infers that movie studios are trying to maximize their total revenue generated through streaming viewership and/or ticket sales, then another assumption is that only the ratings that are produced the most are to be considered for review. Therefore, this leads to the assumption that the most produced MPAA ratings are to be determined a movie success, whereas the rest of the remaining movies are to be determined not a movie success. The following ratings are classified as a movie success: TV-MA, PG-13, TV-14, and R. The rest of the data was cleaned according to the same standards as the Opus data (as mentioned earlier in this section). For the training and testing of the data, as it is textual data, then it had to be done in a different manner. To show the most correlated unigrams and bigrams, the rating column needed to be factorized, returning the first column of results. Then, all duplicates were dropped and sorted by rating. After that, they were placed in a dictionary for easy reference, as they contained the number of total movies per rating. The number of movies associated with a certain rating is shown below:
+
+![Graph of the Number of Movies Associated with Certain MPAA Ratings](images/rating.png)
+
+From there, the features were extracted from the text using the measure of term frequency inverse document frequency, also known as TfidfVectorizer. This is where all of the stopwords (words that are commonly used but have no real value, such as 'this', 'are', 'a') are filtered out of the analysis and the rest of the words are proportionally increased according to the number of times that the word appears in the text. The top 5 words that are referenced across a category (in this case, ratings) are then displayed and saved for further analysis. The following shows the most correlated unigrams (one word at the time of analysis) and bigrams (two words at the time of analysis) for each rating found in the combined dataset:
+
+![Snapshot of Correlated Unigrams/Bigrams for Certain MPAA Ratings](images/grouped_rating.png)
+
+As there were many features that needed to be evaluated according to movie success (rating, actors, directors, genre), then there needed to be different functions created for each analysis of the feature. For every feature, the following was done for each feature:
+- the text was converted to numerical data using Count Vectorizer
+- all of the data was converted into testing and training data
+- the result of the vectorization of the words was then fit against the training data
+- the words were then transformed into their most correlated unigrams/bigrams using Tfidf Vectorizer
+- the data was fit again against the count vectorized data
+- the data is then classified using the multinomial naive bayes learning approach, where the tag of a text is guessed according to the nomials given
+- a prediction is given from user input and the fitted data/tags that were assigned
+
+All predictions were classified as either the feature being a part of a successful movie (1) or not being in a successful movie (0). The following shows an example of the interface where the features being predicted to be a success or not:
+
+![Example of Prediction with Certain Feature - Cast](images/pred_taylor.png)
+
+In order to make the movie prediction that this study builds off of, then the OMDB API is used. This API allows web requests by movie title and returns the following feature information: 
+- 'Title','Year','Rated', 'Released','Runtime','Genre','Director', 'Writer','Actors','Plot','Language','Country','Awards','Poster','Ratings', 'Metascore','imdbRating','imdbVotes','imdbID','Type','DVD','BoxOffice', 'Production','Website','Response', 'movie_success','earnings'
+
+To gather the same information about the movies included in the API, the merged movie dataset was fed into the API to generate another movie dataset that contains the combined data from Opus, Netflix, Amazon Prime, Disney +, and Hulu. This combined dataset is then cleaned for any null values. In order to create a movie success column, the following was done:
+- as this dataset contains box office earnings figures, then they were compared to the average earnings of a successful movie (from the Opus dataset analysis)
+
+Once all of the necessary columns were created, then the same textual analysis steps were taken. However, since there needed to be movies that are returned instead of whether a movie is a success or not, then the following was also done following the 'CountVectorizer' step:
+- the words were stemmed, where inflexional endings and other common morphological words in English were removed from the text
+- all of the words being used in the text (description, cast, actors, genre, writer, director, rating) were all added into one column called 'text'
+- the cosine similarity of the text was calculated against the textual vectors (cosine similarity is where the distance between certain word vectors is calculated and given a score of similarity)
+- a user is given an option to choose a movie to sort by
+- all of the movies are converted into a sorted list, from most relevant to least relevant
+- a table of 5 movies that are most closely related are returned
+
+In order to give users flexibility in the movies that they choose, they must first use the 'movie search' capabilities of the created tool. This will show some basic information about the movie, such as the title, genre, rating, plot description, and a snapshot of the poster of the movie. Since the purpose of this project is to allow for continuous training of the predictive movie, then anytime a user searches a movie, it is added to the overall predictive movie database. An example of the movie search feature is shown below (**add snapshot of movie search**)
+
+An example of the movie prediction database is shown below: (**add snapshot of example**)
+
 # Experiments
 
-add the experiments here.
+This section will 
 
 ## Experimental Design
 
 add the experimental design here.
 
+### Knowledge Gap
+
+add in the details for what the knowledge gap and how the project solves for it.
+
+- add in the reference to the research question and how this solves for the research question
+
+- add in what the hypothesis is
+
+
 ## Evaluation
+
+talk about the evaluation metrics that are being used
+
+- talk about the experimental procedure
 
 ## Threats to Validity
 
