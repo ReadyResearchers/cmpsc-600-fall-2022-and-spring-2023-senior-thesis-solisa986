@@ -142,7 +142,6 @@ The current study can be expanded in a number of ways, one of which is significa
 
 The author calculates the benefits of theaters switching to digital displays using information on theater adoption decisions and the extensive cross-sectional variance in theater and market parameters. The estimated model is used to determine how much excess inertia there is in the switch to digital. The author simulates two counterfactuals: in the first, a planner maximizes aggregate theater profits while taking into account the reaction function of upstream distributors; in the second, the planner imposes coordination on upstream digital distribution while still maximizing aggregate theater profits [@caoui] 2019. The counterfactuals demonstrate that market forces did not offer sufficient inducements for a successful transition from 35mm to digital. Compared to when there is coordination, industry profits are lower under the non-cooperative market outcome. Additionally, excess inertia in the upstream distribution market is responsible for two-thirds of the surplus loss, while adoption externalities in the downstream exhibition market are responsible for the remaining one-third.
 
-
 # Method of approach
 
 ## Introduction
