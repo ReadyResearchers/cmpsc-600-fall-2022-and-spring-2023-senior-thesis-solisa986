@@ -138,9 +138,9 @@ The primary adoption panel dataset is supplemented by two additional datasets. T
 The four types used (movie theater, market demand, digital projector, and movie distribution) for the different variables can be described in the following ways. The type ‘movie theaters’ is assigned to the variables digital screens (number of screens digitized over time), screens (total number of screens), seats (seats per screen), art house (binary variable to check if it is an art house theater), chain (identifies if the movie theater is a chain), and competitors screens (number of screens from a rival in the local market) [@caoui]. The type ‘market demand’ is assigned to the variables region (identifier for the regions used in the study) and market size (identifier for the different markets in Paris being studied) [@caoui]. The type ‘digital projector’ covers the variable adoption costs, which is the cost of buying the bare-minimum digital projector. The type ‘movie distribution’ relates to the variable digital movies, which is the total share of movies that were released in a digital form instead of a film format.
 The findings point to the potential benefit of regulatory intervention in network industries, particularly in terms of coordinating businesses' adoption of cutting-edge technology. Additionally, the best tool (between adoption subsidies and standard-setting committees) relies on the reason for the inefficiency as well as the market segment that has too much inertia. According to the data, the upstream distribution market has the most inertia in the case of digital cinema.
 
-The current study can be expanded in a number of ways, one of which is significant. It might be possible to relax the presumption that the digital manufacturing industry is competitive ("non-sponsored" technology) [@caoui] 2019. In digital manufacturing, oligopoly or a monopoly may assist match the best diffusion path with the market outcome.
+The current study can be expanded in a number of ways, one of which is significant. It might be possible to relax the presumption that the digital manufacturing industry is competitive ("non-sponsored" technology) [@caoui]. In digital manufacturing, oligopoly or a monopoly may assist match the best diffusion path with the market outcome.
 
-The author calculates the benefits of theaters switching to digital displays using information on theater adoption decisions and the extensive cross-sectional variance in theater and market parameters. The estimated model is used to determine how much excess inertia there is in the switch to digital. The author simulates two counterfactuals: in the first, a planner maximizes aggregate theater profits while taking into account the reaction function of upstream distributors; in the second, the planner imposes coordination on upstream digital distribution while still maximizing aggregate theater profits [@caoui] 2019. The counterfactuals demonstrate that market forces did not offer sufficient inducements for a successful transition from 35mm to digital. Compared to when there is coordination, industry profits are lower under the non-cooperative market outcome. Additionally, excess inertia in the upstream distribution market is responsible for two-thirds of the surplus loss, while adoption externalities in the downstream exhibition market are responsible for the remaining one-third.
+The author calculates the benefits of theaters switching to digital displays using information on theater adoption decisions and the extensive cross-sectional variance in theater and market parameters. The estimated model is used to determine how much excess inertia there is in the switch to digital. The author simulates two counterfactuals: in the first, a planner maximizes aggregate theater profits while taking into account the reaction function of upstream distributors; in the second, the planner imposes coordination on upstream digital distribution while still maximizing aggregate theater profits [@caoui]. The counterfactuals demonstrate that market forces did not offer sufficient inducements for a successful transition from 35mm to digital. Compared to when there is coordination, industry profits are lower under the non-cooperative market outcome. Additionally, excess inertia in the upstream distribution market is responsible for two-thirds of the surplus loss, while adoption externalities in the downstream exhibition market are responsible for the remaining one-third.
 
 # Method of approach
 
@@ -150,7 +150,7 @@ This section of the paper will focus on the method of approach towards solving f
 
 ## Data Collection and Validation
 
-In order to gather relevant movie data for analysis, the following sources were used: The Numbers API: Opus, OMDB API, Kaggle, and IMDB. These websites/API's are a host for multiple datasets used for predictive analysis and have been highly regarded among other data scientists. The different data obtained from these sources will be described below. 
+As mentioned previously, the following sources were used for data collection and analysis: The Numbers API: Opus, OMDB API, Kaggle, and IMDB. The different data obtained from these sources will be described below. 
 
 The Numbers is a free website that offers its resources to industry professionals, the investment community, and movie fans. These resources consist of tracking business information on movies, where the information gathered on these movies comes from either other free movie information sites (such as IMDB) or from sources in the industry (movie studios) [@the_numbers]. Through these resources, The Numbers is able to continously update their movie data, as they receive their information/updates on a daily basis. The Numbers collaborates with Opus Data to provide a movie API, where users of this API can obtain updated movie data. In order to not go outside of the scope of this project, this research uses the educational data provided by the API, where this package contains relevelant movie information for 1,900 movies spanning from 2006 to 2018. The dataset contains information on movies for the following: movie name, production year, movie ID, production budget, domestic box office, international box office, rating, creative type, source, production method, genre, sequel, and running time.
 
@@ -160,20 +160,99 @@ In order to display relevant information about movies for the predictive recomme
 
 As part of the training of the machine learning model, new data has to be introduced to the model for predictive analysis. IMDB is considered the world's most popular and authoritative source for movies and TV shows, therefore their free public datasets were chosen for implementation [@imdb]. There are a variety of different datasets that are available from IMDB, this paper decided to focus on one particular dataset that contained preliminary information about movies, which is the Title Basics dataset. This dataset contains information on the following features of a movie: title type, primary title, original title, isAdult, start year, end year, runtime (in minutes), and genre. Since the OMDB API only needs the movie title to perform it's searching functions, then the primaryTitle column is the only variable used in this dataset for analysis.
 
-As the dataset with the most amount of numerical information and reputable sources, the Opus dataset was used for statistical analysis. Before being able to analyze the features, however, the Opus data needed to be cleaned.  Data cleaning is the process of removing incorrect, corrupted, incorrectly formated, or incomplete dat from within a dataset. For data cleaning, the language Python and the Python packages Pandas was used. As it was imperitive to be able to control the number of rows being displayed in the datasets, different functions were created with a rows parameter so that the number of rows to be converted could be controlled. Using the pandas feature 'read_csv', the dataset was transformed into a pandas dataframe. As part of the data cleaning process, the textual data inside of the dataframe is then converted into all lowercase. This make it easier to process the data. In pandas, columns are either inferred from the schema of the dataset or implicitly defined -- for the purposes of this paper, the schema was implicitly defined and the column names were set as the first row of the dataset. In order to ensure accurate analysis of the information provided, any null values (or rows that contained no information) were dropped from the dataframe. Additionally, for the Netflix, Hulu, Disney +, and Amazon Prime dataframes, the rows containing information for TV shows were dropped as well. This is because the analysis of TV shows is outside of the scope of this project. Once only relevant data remained in the dataframes, then the data was converted into their respective data types. For example, the release year column was converted into datetime format. This ensures that the pandas dataframe can be analyzed easier and more efficiently.
+As the dataset with the most amount of numerical information and reputable sources, the Opus dataset was used for statistical analysis. Before being able to analyze the features, however, the Opus data needed to be cleaned.  Data cleaning is the process of removing incorrect, corrupted, incorrectly formated, or incomplete dat from within a dataset. For data cleaning, the language Python and the Python packages Pandas was used. As it was imperitive to be able to control the number of rows being displayed in the datasets, different functions were created with a rows parameter so that the number of rows to be converted could be controlled. Using the pandas feature 'read_csv', the dataset was transformed into a pandas dataframe. As part of the data cleaning process, the textual data inside of the dataframe is then converted into all lowercase. This make it easier to process the data. In pandas, columns are either inferred from the schema of the dataset or implicitly defined -- for the purposes of this paper, the schema was implicitly defined and the column names were set as the first row of the dataset. 
 
-When comparing the success of a movie between different movies of varying data, the following features were found to have a statistically significant influence on the success of a movie: Rating, Genre, Production Budget, Sequel, Domestic Box Office Earnings, and International Box Office Earnings. This information was obtained through the following platforms/languages: R Studio Cloud, R, and Python. Using R Studio Cloud, multiple linear regressions were ran on all of the features of a movie from the cleaned Opus dataframe. Any features that did not have a statistically significant R2 value and P-value were removed from the dataframe. These features were 'movie names, creative type, source, and production method'. As the textual data (such as the genre) was statistically significant to the success of a movie, then it was imperitive to convert it into a format that R would be able to analyze. Therefore, all remaining textual data (genre) was converted into dummy variables. Dummy variables are when the column is exploded based on the unique values and then assigned a value of either 1 or 0 depending on the presence of the variable in the specific row. For example, if a movie is categorized in the genre 'Horror', then the column 'genre_Horror' will contain a 1 and all other variations of the genre column will contain a 0. This creation of dummy variables was done with Pandas using their 'get_dummies()' function. For the other textual column, 'rating', the 'map()' function was used. The map function executes a specified function for each item that it iterates through -- this is used when one wants to apple a single transformation function to all elements of a function (such as a list or tuple). In this case, the map function was used to assign a number to the text data for analysis, which effectively converts all text in the rating column into a number. These numbers have no effect on the weight that a specific rating has on a movie's success, they are simply arbitrary numbers that are used for identification purposes when running analysis on the data.
+```python
+@st.cache_data
+def load_data_opus(nrows):
+    data = pd.read_csv('pages/movie_data/movie_data/movie_data.csv', 
+    nrows=nrows)
+    lowercase = lambda x: str(x).lower()
+    # setting up pandas dataframe for all of the files
+    data.rename(lowercase, axis='columns', inplace=True)
+    return data
+```
 
-Rating is categorized in the following for Opus Data- G: 0; PG: 1; PG-13: 2; R: 3; NC-17: 4; Not Rated: 5.
+In order to ensure accurate analysis of the information provided, any null values (or rows that contained no information) were dropped from the dataframe. Additionally, for the Netflix, Hulu, Disney +, and Amazon Prime dataframes, the rows containing information for TV shows were dropped as well. This is because the analysis of TV shows is outside of the scope of this project. Once only relevant data remained in the dataframes, then the data was converted into their respective data types. For example, the release year column was converted into datetime format. This ensures that the pandas dataframe can be analyzed easier and more efficiently.
 
+```python
+# drop nan values
+opus = opus.dropna()
+prime = prime.dropna()
+netflix = netflix.dropna()
+disney = disney.dropna()
+hulu = hulu.dropna()
 
-Rating is categorized in the following for Netflix, Prime, Hulu, and Disney + Data- TV-Y: 0; TV-Y7: 1; TV-Y7-FV: 2; G: 3; TV-G: 4; PG: 5; TV-PG: 6; PG-13: 7; TV-14: 8; R: 9; TV-MA: 10; NC-17: 11; NR: 12; UR: 13.
+# dropping tv show rows
+netflix = netflix[netflix['type'].str.contains("TV Show") == False]
+prime = prime[prime['type'].str.contains("TV Show") == False]
+disney = disney[disney['type'].str.contains("TV Show") == False]
+hulu = hulu[hulu['type'].str.contains("TV Show") == False]
+```
 
-As none of the dataframes explicitly had a column that designated whether a movie was successful or not, then it was necessary to create a new column in the dataframes with this information. Regarding the Opus dataframe, movie success was categorized as either True or False for the following condition: True if the domestic box office and international box office (revenue) is greater than the production budget, and False if the production budget is greater than the revenue generated. In order to convert this into a readable format for the program to recognize, all True/False statements were then converted into 1 (True) and 0 (False). As this dataframe contained mostly numerical information, then it was used as the basis for movie success, where trends found in this dataframe would be applied to the features in the Kaggle and OMDB datasets. Given this, the following data from Opus Data was used to create movie success columns in the OMDB dataset: the average revenue generated by a successful movie, which in this case was $55,507,312.60 (USD). Essentially, any Box Office earnings that were equal to or exceeded the average revenue was classified as a movie success (1); anything else was classified as not a movie success (0). For the Netflix, Hulu, Disney +, and Amazon Prime datasets, any genres that contained more than 150 number of movies being produced were categorized as a movie success (1) and any other genre under 150 movies produced were categorized as not a movie success (0). The genres TV-MA, PG-13, TV-14, and R were the genres that produced 150 or more movies, so these are the genres that contain successful movies.
+When comparing the success of a movie between different movies of varying data, the following features were found to have a statistically significant influence on the success of a movie: Rating, Genre, Production Budget, Sequel, Domestic Box Office Earnings, and International Box Office Earnings. This information was obtained through the following platforms/languages: R Studio Cloud, R, and Python. Using R Studio Cloud, multiple linear regressions were ran on all of the features of a movie from the cleaned Opus dataframe. Any features that did not have a statistically significant R2 value and P-value were removed from the dataframe. These features were 'movie names, creative type, source, and production method'. 
+
+```r
+# simple regression on genre
+simple_model <- lm(movie_success ~ production_year + 
+production_budget + rating + sequel + genre_Adventure + 
+genre_Action + genre_BlackComedy+ genre_Comedy + 
+genre_Concert.Performance+ genre_Documentary + 
+genre_Drama + genre_Horror + genre_Musical + 
+genre_RomanticComedy + genre_Thriller.Suspense + 
+genre_Western, opus)
+summary(simple_model)
+stargazer(simple_model, type="text")
+
+opus %<>% mutate(revenuehat = fitted(simple_model),
+                 uhat = residuals(simple_model))
+opus %>%
+  select(movie_success, revenuehat, uhat) %>%
+  head(10)
+
+opus %>%
+  select(movie_success, revenuehat, uhat) %>%
+  stargazer(type = "text")
+```
+
+As the textual data (such as the genre) was statistically significant to the success of a movie, then it was imperitive to convert it into a format that R would be able to analyze. Therefore, all remaining textual data (genre) was converted into dummy variables. Dummy variables are when the column is exploded based on the unique values and then assigned a value of either 1 or 0 depending on the presence of the variable in the specific row. For example, if a movie is categorized in the genre 'Horror', then the column 'genre_Horror' will contain a 1 and all other variations of the genre column will contain a 0. This creation of dummy variables was done with Pandas using their 'get_dummies()' function. For the other textual column, 'rating', the 'map()' function was used. The map function executes a specified function for each item that it iterates through -- this is used when one wants to apple a single transformation function to all elements of a function (such as a list or tuple). In this case, the map function was used to assign a number to the text data for analysis, which effectively converts all text in the rating column into a number. These numbers have no effect on the weight that a specific rating has on a movie's success, they are simply arbitrary numbers that are used for identification purposes when running analysis on the data.
+
+```python
+opus = pd.get_dummies(opus, columns=['genre'])
+opus['rating'] = opus['rating'].map({'G':0, 'PG': 1, 'PG-13': 2, 
+'R': 3, 'NC-17': 4, 'Not Rated': 5})
+netflix['rating'] = netflix['rating'].map({'TV-Y': 0, 'TV-Y7': 1, 
+'TV-Y7-FV': 2,'G': 3, 'TV-G': 4, 'PG': 5, 
+'TV-PG': 6, 'PG-13': 7, 'TV-14': 8,
+'R': 9, 'TV-MA': 10, 'NC-17': 11, 
+'NR': 12, 'UR': 13})
+prime['rating'] = prime['rating'].map({'TV-Y': 0, 'TV-Y7': 1, 
+'TV-Y7-FV': 2,'G': 3, 'TV-G': 4, 'PG': 5, 
+'TV-PG': 6, 'PG-13': 7, 'TV-14': 8,
+'R': 9, 'TV-MA': 10, 'NC-17': 11, 
+'NR': 12, 'UR': 13})
+disney['rating'] = disney['rating'].map({'TV-Y': 0, 'TV-Y7': 1, 
+'TV-Y7-FV': 2,'G': 3, 'TV-G': 4, 'PG': 5, 
+'TV-PG': 6, 'PG-13': 7, 'TV-14': 8,
+'R': 9, 'TV-MA': 10, 'NC-17': 11, 
+'NR': 12, 'UR': 13})
+```
+
+As none of the dataframes explicitly had a column that designated whether a movie was successful or not, then it was necessary to create a new column in the dataframes with this information. Regarding the Opus dataframe, movie success was categorized as either True or False for the following condition: True if the domestic box office and international box office (revenue) is greater than the production budget, and False if the production budget is greater than the revenue generated. In order to convert this into a readable format for the program to recognize, all True/False statements were then converted into 1 (True) and 0 (False). As this dataframe contained mostly numerical information, then it was used as the basis for movie success, where trends found in this dataframe would be applied to the features in the Kaggle and OMDB datasets. 
+
+Given this, the following data from Opus Data was used to create movie success columns in the OMDB dataset: the average revenue generated by a successful movie, which in this case was $55,507,312.60 (USD). Essentially, any Box Office earnings that were equal to or exceeded the average revenue was classified as a movie success (1); anything else was classified as not a movie success (0). 
+
+```python
+train_data = pd.read_csv('movie_clean.csv')
+train_data['earnings'] = train_data["BoxOffice"].replace(np.nan,"0")
+train_data['earnings'] = train_data['earnings'].str.replace(r'[^\w\s]+', '')
+```
+
+For the Netflix, Hulu, Disney +, and Amazon Prime datasets, any genres that contained more than 150 number of movies being produced were categorized as a movie success (1) and any other genre under 150 movies produced were categorized as not a movie success (0). The genres TV-MA, PG-13, TV-14, and R were the genres that produced 150 or more movies, so these are the genres that contain successful movies.
 
 ## Data Analysis
 
-Since the main part of this paper revolves around the determinants of movie success, then the data analysis had to center around the binary variable 'movie_success'. These binary variables will be analyzed using Binary Logistic Regression, where this models the relationship between a set of independent variables and a binary dependent variable, which is coded as a 1 (movie success) or 0 (not a movie success). This involves the regression model prediciting P(Y=1) as a function of X, where the analysis is the probability that the dependent variable 'movie_success' will take a value of 1 given the independent variables of X. The independent variables used in this regression are categorical and continuous. In order to run the regression on only the statistically significant values, a step-wise linear regression was ran using R Studio Cloud. In this regression, a new variable was created (called total revenue) that was the sum of the domestic box office earnings and the international box office earnings. Through running a simple regression, the following features were found to be statistically significant, as they had a p-value that was less than .05 (this means that there is a 95% confidence level that this feature explains the overall model): production year, production budget, domestic box office, international box office, rating, sequel, running time, genre_Adventure, genre_Action, genre_Black Comedy, genre_Comedy, genre_Concert/Performance, genre_Documentary, genre_Drama, genre_Horror, genre_Musical, genre_Romantic Comedy, genre_Thriller/Suspense, genre_Western. Below are examples of the logistic regressions ran for each of the features being analyzed against movie success.
+Since the main part of this paper revolves around the determinants of movie success, then the data analysis had to center around the binary variable 'movie_success'. This binary variable will be analyzed using Binary Logistic Regression, where this models the relationship between a set of independent variables and a binary dependent variable, which is coded as a 1 (movie success) or 0 (not a movie success). This involves the regression model prediciting P(Y=1) as a function of X, where the analysis is the probability that the dependent variable 'movie_success' will take a value of 1 given the independent variables of X. The independent variables used in this regression are categorical and continuous. In order to run the regression on only the statistically significant values, a step-wise linear regression was ran using R Studio Cloud. In this regression, a new variable was created (called total revenue) that was the sum of the domestic box office earnings and the international box office earnings. Through running a simple regression, the following features were found to be statistically significant, as they had a p-value that was less than .05 (this means that there is a 95% confidence level that this feature explains the overall model): production year, production budget, domestic box office, international box office, rating, sequel, running time, genre_Adventure, genre_Action, genre_Black Comedy, genre_Comedy, genre_Concert/Performance, genre_Documentary, genre_Drama, genre_Horror, genre_Musical, genre_Romantic Comedy, genre_Thriller/Suspense, genre_Western. Below are examples of the logistic regressions ran for each of the features being analyzed against movie success.
 
 ![Logistic Regression of Production Year on Movie Success](images/prod_year_analysis.png)
 
@@ -186,7 +265,43 @@ Since the column of movie success was created using the domestic box office and 
 
 ![Residual Regression of all Features on Movie Success](images/movie_success_resid.png)
 
-After doing the preliminary data analysis to find the statistically significant features, it was then time to do the machine learning analysis of the data. Machine learning is the process of 'making systems that learn and improve by themselves, by being specifically programmed' [@banoula]. For machine learning all of the statistically significant features were put as the x value, with the y-value being the movie success column. The data was randomized to make sure that it is evenly distributed and that the ordering does not affect the learning process. From there, the data is split into training and testing data. The training data (which is 30% of the total data) is what the machine learning model will learn from, where it will take all of the features included in x and then attempt to guess the possibility of y based on these features. The testing data (which is 70% of the total data) is used to check the accuracy of the model after training. In order to determine the correct machine learning model, the following models were evaluated with the same training/testing data: Linear Regression, Random Forest Regressor, Extra Tree Regressor, Decision Tree Classifier, Support Vector Machine, and Logistic Regression.
+After doing the preliminary data analysis to find the statistically significant features, it was then time to do the machine learning analysis of the data. Machine learning is the process of 'making systems that learn and improve by themselves, by being specifically programmed' [@banoula]. For machine learning all of the statistically significant features were put as the x value, with the y-value being the movie success column. The data was randomized to make sure that it is evenly distributed and that the ordering does not affect the learning process. From there, the data is split into training and testing data. The training data (which is 30% of the total data) is what the machine learning model will learn from, where it will take all of the features included in x and then attempt to guess the possibility of y based on these features. The testing data (which is 70% of the total data) is used to check the accuracy of the model after training.
+
+```python
+opus = clean_data.clean_data()[0]
+opus_cols = ['production_budget', 'rating', 'sequel', 'genre_Action', 
+'genre_Comedy', 'genre_Drama', 
+'genre_Adventure', 'genre_Black Comedy', 'genre_Concert/Performance', 
+'genre_Documentary', 'genre_Horror',
+'genre_Musical', 'genre_Romantic Comedy', 'genre_Thriller/Suspense', 
+'genre_Western']  
+ox, oy = opus[opus_cols], opus['movie_success']
+ox_train, ox_test, oy_train, oy_test = train_test_split(
+    ox, oy, test_size=.7, random_state=42)
+```
+
+In order to determine the correct machine learning model, the following models were evaluated with the same training/testing data: Linear Regression, Random Forest Regressor, Extra Tree Regressor, Decision Tree Classifier, Support Vector Machine, and Logistic Regression.
+
+```python
+def lr():
+    lr = LinearRegression()
+    # model building
+    lr_fit = lr.fit(ox_train, oy_train)
+    scores_lr = lr.score(ox_test, oy_test)
+    st.write("Accuracy: ", scores_lr)
+    otrain_pred = lr.predict(ox_train)
+    otest_pred = lr.predict(ox_test)
+    plt.figure(figsize=(5,5))
+    plt.scatter(x=oy_train, y=otrain_pred, c="#7CAE00", alpha=0.3)
+    z = np.polyfit(oy_train, otrain_pred, 1)
+    p = np.poly1d(z)
+    plt.plot(oy_train,p(otrain_pred),"#F8766D")
+    plt.ylabel('Predicted LogS of Movie Success')
+    plt.xlabel('Experimental LogS of Movie Success')
+    st.write("Visualizing the difference between the train" + 
+    "and test data when prediciting 'movie_success'")
+    st.pyplot(plt.plot())
+```
 
 ## Technical Diagram
 
@@ -208,13 +323,141 @@ All of these models contain specific algorithsm that are found in the sci-kit le
 
 ![Logistic Regression Algorithm](images/log_reg_acc.png)
 
-As the data is split up according to 'movie success' or 'not a movie success', then the Logistic Regression machine learning model was chosen for evaluation. Choosing the correct model is extremely important, as it determines the output of the model as well as the overall accuracy. The Logistic Regression model contains the most accuracte algorithms and can classify binary data, as shown by the most accurate score. In order to use the models for predictive analysis, they were exported into '.sav' files using [@joblib]'s dump method. The files were then exported into another file and were loading into variables using [@joblib]'s load function. Since all of the features used to evaluate the model are needed to make a prediction, then a prediction form was created, using [@streamlit]. All of the choices were saved as inputs for machine learning model, with the determination of the Y value being returned by the model. In order to convert the model's output into a readable format by non-technical users, then 0's were quantified as 'NOT A SUCCESS' and 1's were quantified as 'A SUCCESS'. A simulation of the movie success results form is found below: 
+As the data is split up according to 'movie success' or 'not a movie success', then the Logistic Regression machine learning model was chosen for evaluation. Choosing the correct model is extremely important, as it determines the output of the model as well as the overall accuracy. The Logistic Regression model contains the most accuracte algorithms and can classify binary data, as shown by the most accurate score. In order to use the models for predictive analysis, they were exported into '.sav' files using [@joblib]'s dump method. The files were then exported into another file and were loading into variables using [@joblib]'s load function. 
+
+```python
+def predict(data): # pylint: disable=W0621
+    """Initial set up function to import the machine learning models."""
+    logreg_filename = "logreg_model.sav"
+    lr_filename = "lr_model.sav"
+    rf_filename = "rf_model.sav"
+    et_filename = "et_model.sav"
+    dtc_filename = "dtc_model.sav"
+    svm_filename = "svm_model.sav"
+    logreg = joblib.load(logreg_filename)
+    lr = joblib.load(lr_filename)
+    rf = joblib.load(rf_filename)
+    et = joblib.load(et_filename)
+    dtc = joblib.load(dtc_filename)
+    svm = joblib.load(svm_filename)
+    return logreg.predict(data), lr.predict(data), 
+    rf.predict(data), et.predict(data), dtc.predict(data), 
+    svm.predict(data)
+```
+
+Since all of the features used to evaluate the model are needed to make a prediction, then a prediction form was created, using [@streamlit]. All of the choices were saved as inputs for machine learning model, with the determination of the Y value being returned by the model. In order to convert the model's output into a readable format by non-technical users, then 0's were quantified as 'NOT A SUCCESS' and 1's were quantified as 'A SUCCESS'. 
+
+```python
+df = np.array([[prod_budget, rating, sequel, genre_Action,
+    genre_Comedy, genre_Drama, genre_Adventure,
+    genre_BlackComedy, genre_Concert, genre_Documentary,
+    genre_Horror, genre_Musical, genre_RomanticComedy,
+    genre_Thriller, genre_Western]], dtype=int)
+
+    result_logreg = predict(df)[0]
+    result_lr = predict(df)[1]
+    result_rf = predict(df)[2]
+    result_et = predict(df)[3]
+    result_dtc = predict(df)[4]
+    result_svm = predict(df)[5]
+
+    result_logreg = result_logreg.reshape(1, -1)
+    result_lr = result_lr.reshape(1, -1)
+    result_rf = result_rf.reshape(1, -1)
+    result_et = result_et.reshape(1, -1)
+    result_dtc = result_dtc.reshape(1, -1)
+    result_svm = result_svm.reshape(1, -1)
+
+    score_logreg = G_machine_learning.logreg()[1]
+    score_lr = G_machine_learning.lr()[1]
+    score_rf = G_machine_learning.rf()[1]
+    score_et = G_machine_learning.et()[1]
+    score_dtc = G_machine_learning.dtc()[1]
+    score_svm = G_machine_learning.svm()[1]
+
+    st.subheader("Movie Success Results:")
+    for i in result_logreg:
+        if i[0].round() == 0:
+            st.write("The Logistic Regression Machine " +
+            "Learning model predicted your movie " +
+            "would NOT BE A SUCCESS with a " +
+            f"{ (100 * score_logreg) }% confidence! :(")
+        elif i[0].round() == 1:
+            st.write(f"The Logistic Regression Machine " + 
+            "Learning model predicted your movie " +
+            "would BE A SUCCESS with a " +
+            f"{ (100 * score_logreg) }% confidence! :)")
+        else:
+            st.write("Please try again later.")
+```
+
+A simulation of the movie success results form is found below: 
 
 ![Snippet of User Interface for Movie Prediction](images/dash_1.png)
 
 ![Results of Running Movie Prediction Based on User Choices](images/dash_2.png)
 
-For the rest of the data obtained, as they were composed of mainly textual data, the process of evaluating them was different. All of the Netflix, Amazon Prime, Disney +, and Hulu data was merged into one dataset. From there, all titles classified as a 'TV Show' were removed from processing. The determination of a movie success was rather difficult to determine at first, as there was not numerical data to quanitfy a movie success. However, upon reviewing the literature of how MPAA ratings affect movie revenue, "It is claimed, in fact, that the lower the rating, the higher the profits (Israelsen-Hartley 2010; Palsson et al. 2013)"[@palsson]. Additionally, as this study infers that movie studios are trying to maximize their total revenue generated through streaming viewership and/or ticket sales, then another assumption is that only the ratings that are produced the most are to be considered for review. Therefore, this leads to the assumption that the most produced MPAA ratings are to be determined a movie success, whereas the rest of the remaining movies are to be determined not a movie success. The following ratings are classified as a movie success: TV-MA, PG-13, TV-14, and R. The rest of the data was cleaned according to the same standards as the Opus data (as mentioned earlier in this section). For the training and testing of the data, as it is textual data, then it had to be done in a different manner. To show the most correlated unigrams and bigrams, the rating column needed to be factorized, returning the first column of results. Then, all duplicates were dropped and sorted by rating. After that, they were placed in a dictionary for easy reference, as they contained the number of total movies per rating. The number of movies associated with a certain rating is shown below:
+For the rest of the data obtained, as they were composed of mainly textual data, the process of evaluating them was different. All of the Netflix, Amazon Prime, Disney +, and Hulu data was merged into one dataset. From there, all titles classified as a 'TV Show' were removed from processing. The determination of a movie success was rather difficult to determine at first, as there was not numerical data to quanitfy a movie success. However, upon reviewing the literature of how MPAA ratings affect movie revenue, "It is claimed, in fact, that the lower the rating, the higher the profits (Israelsen-Hartley 2010; Palsson et al. 2013)"[@palsson]. Additionally, as this study infers that movie studios are trying to maximize their total revenue generated through streaming viewership and/or ticket sales, then another assumption is that only the ratings that are produced the most are to be considered for review. Therefore, this leads to the assumption that the most produced MPAA ratings are to be determined a movie success, whereas the rest of the remaining movies are to be determined not a movie success. The following ratings are classified as a movie success: TV-MA, PG-13, TV-14, and R. The rest of the data was cleaned according to the same standards as the Opus data (as mentioned earlier in this section). 
+
+For the training and testing of the data, as it is textual data, then it had to be done in a different manner. To show the most correlated unigrams and bigrams, the rating column needed to be factorized, returning the first column of results. Then, all duplicates were dropped and sorted by rating. After that, they were placed in a dictionary for easy reference, as they contained the number of total movies per rating. 
+
+```python
+def classification():
+    classification = st.selectbox("Please choose a column to find the " + 
+    "unigrams and bigrams for: ", data_cols)
+    grouping = st.selectbox(
+        "Please choose a column to group by: ", data_cols, 
+        key=np.random)
+    x = train_data[data_cols]
+    y = train_data[data_cols].drop('movie_success', axis=1)
+
+    # add column encoding the type as an integer and 
+    # create dictionaries
+    x[f'{classification}_id'] = x[classification].factorize()[0]
+    category_id_df = x[[classification, 
+    f'{classification}_id']]
+    category_id_df.drop_duplicates().sort_values(
+        f'{classification}_id'
+        )
+    category_to_id = dict(category_id_df.values)
+    id_to_category = dict(
+        category_id_df[[f'{classification}_id', 
+        classification]].values)
+
+    # checking to see the balance of classes
+    fig = plt.figure(figsize=(8,6))
+    x.groupby(train_data[classification])[grouping].count().plot.bar(ylim=0)
+    st.subheader(f"Count of {grouping} associated" +
+    f"with a certain {classification}:")
+    st.pyplot(fig)
+
+    # extracting features from text using the measure term 
+    # frequency inverse document frequency (tfidf)
+    tfidf = TfidfVectorizer(sublinear_tf=True, min_df=5, 
+    norm='l2', encoding='latin-1', ngram_range=(1, 2), 
+    stop_words='english')
+    features = tfidf.fit_transform(x[grouping]).toarray()
+    labels = x[f'{classification}_id']
+
+    st.subheader(f"Correlated words grouped by {classification}")
+    N = 2
+    for Product, category_id in sorted(category_to_id.items()):
+        features_chi2 = chi2(features, labels == category_id)
+        indices = np.argsort(features_chi2[0])
+        feature_names = np.array(tfidf.get_feature_names_out())[indices]
+        unigrams = [v for v in feature_names if len(v.split(' ')) == 1]
+        bigrams = [v for v in feature_names if len(v.split(' ')) == 2]
+        st.write("# '{}':".format(Product))
+        st.write(
+            "Most correlated unigrams:\n. {}".format('\n. '.join(
+                unigrams[-N:])))
+        st.write(
+            "Most correlated bigrams:\n. {}".format('\n. '.join(
+                bigrams[-N:])))
+        st.write("---")
+```
+
+The number of movies associated with a certain rating is shown below:
 
 ![Graph of the Number of Movies Associated with Certain MPAA Ratings](images/rating.png)
 
@@ -222,7 +465,7 @@ From there, the features were extracted from the text using the measure of term 
 
 ![Snapshot of Correlated Unigrams/Bigrams for Certain MPAA Ratings](images/grouped_rating.png)
 
-As there were many features that needed to be evaluated according to movie success (rating, actors, directors, genre), then there needed to be different functions created for each analysis of the feature. For every feature, the following was done for each feature: the text was converted to numerical data using Count Vectorizer; all of the data was converted into testing and training data; the result of the vectorization of the words was then fit against the training data; the words were then transformed into their most correlated unigrams/bigrams using Tfidf Vectorizer; the data was fit again against the count vectorized data; the data is then classified using the multinomial naive bayes learning approach, where the tag of a text is guessed according to the nomials given; a prediction is given from user input and the fitted data/tags that were assigned
+As there were many features that needed to be evaluated according to movie success (rating, actors, directors, genre), then there needed to be different functions created for each analysis of the feature. For every feature, the following was done for each feature: the text was converted to numerical data using Count Vectorizer; all of the data was converted into testing and training data; the result of the vectorization of the words was then fit against the training data; the words were then transformed into their most correlated unigrams/bigrams using Tfidf Vectorizer; the data was fit again against the count vectorized data; the data is then classified using the multinomial naive bayes learning approach, where the tag of a text is guessed according to the nomials given; a prediction is given from user input and the fitted data/tags that were assigned.
 
 All predictions were classified as either the feature being a part of a successful movie (1) or not being in a successful movie (0). The following shows an example of the interface where the features being predicted to be a success or not:
 
@@ -234,7 +477,127 @@ To gather the same information about the movies included in the API, the merged 
 
 Once all of the necessary columns were created, then the same textual analysis steps were taken. However, since there needed to be movies that are returned instead of whether a movie is a success or not, then the following was also done following the 'CountVectorizer' step: the words were stemmed, where inflexional endings and other common morphological words in English were removed from the text; all of the words being used in the text (description, cast, actors, genre, writer, director, rating) were all added into one column called 'text'; the cosine similarity of the text was calculated against the textual vectors (cosine similarity is where the distance between certain word vectors is calculated and given a score of similarity); a user is given an option to choose a movie to sort by; all of the movies are converted into a sorted list, from most relevant to least relevant; a table of 5 movies that are most closely related are returned
 
-In order to give users flexibility in the movies that they choose, they must first use the 'movie search' capabilities of the created tool. This will show some basic information about the movie, such as the title, genre, rating, plot description, and a snapshot of the poster of the movie. Since the purpose of this project is to allow for continuous training of the predictive movie, then anytime a user searches a movie, it is added to the overall predictive movie database. An example of the movie search feature and the movie prediction database is shown below:
+```python
+# doing data preprocessing
+movies = data[['imdbID', 'Title', 'Plot', 'Genre', 
+'Actors', 'Director', 'Writer', 'Rated']]
+
+movies.dropna(inplace=True)
+movies = movies.drop_duplicates().reset_index()
+
+movies['tags'] = movies['Genre'] + " " +  
+movies['Plot'] + " " + movies['Actors'] + " " + 
+movies['Director'] + " " + movies['Writer'] + " " + 
+movies['Rated']
+
+new_df = movies[['imdbID', 'Title', 'tags']]
+
+cv = CountVectorizer(max_features=5000, 
+stop_words='english')
+vectors = cv.fit_transform(
+    new_df['tags']).toarray()
+ps = PorterStemmer()
+
+def stem(text):
+    y = []
+    for i in text.split():
+        y.append(ps.stem(i))
+    return " ".join(y)
+
+new_df['tags'] = new_df['tags'].apply(
+    stem)
+similarity = cosine_similarity(
+    vectors)
+indices = pd.Series(new_df.index, 
+index=new_df['Title']).drop_duplicates()
+
+def get_recommendations(title, 
+cosine_sim=similarity):
+    idx = indices[title]
+    sim_scores = list(enumerate(cosine_sim[idx]))
+    sim_scores = sorted(sim_scores, 
+    key=lambda x: x[1], reverse=True)
+    sim_scores = sim_scores[1:11]
+    movie_indices = [i[0] for i in sim_scores]
+    return pd.DataFrame(
+        new_df[['Title', 'tags']].iloc[movie_indices])
+
+movie_list = new_df['Title'].values
+
+selected_movie = st.selectbox(
+    "Type or select a movie from the dropdown", 
+    movie_list, key=movie_list)
+
+# show recommended movie predictions
+if st.button('Show Recommendation'):
+    recommended_movie_names = get_recommendations(
+        selected_movie)
+    a = recommended_movie_names.values[0][0]
+    b = recommended_movie_names.values[1][0]
+    c = recommended_movie_names.values[2][0]
+    d = recommended_movie_names.values[3][0]
+    if a:
+        url = f'http://www.omdbapi.com/?t={a}&apikey=a98f1e4b'
+        re = requests.get(url)
+        re = re.json()
+        col1, col2 = st.columns([1, 2])
+        with col1:
+            st.image(re['Poster'])
+        with col2:
+            st.subheader(re['Title'])
+            st.caption(
+                f"Genre: {re['Genre']} | Year: {re['Year']}" +
+                f" | Rated: {re['Rated']} | " +
+                f"Released: {re['Released']}")
+            st.write(re['Plot'])
+            st.text(f"Rating: {re['imdbRating']}")
+            st.progress(float(re['imdbRating']) / 10)
+```
+
+In order to give users flexibility in the movies that they choose, they must first use the 'movie search' capabilities of the created tool. This will show some basic information about the movie, such as the title, genre, rating, plot description, and a snapshot of the poster of the movie. Since the purpose of this project is to allow for continuous training of the predictive movie, then anytime a user searches a movie, it is added to the overall predictive movie database.
+
+```python
+def search_movies():
+    """Function to search for the movies using the OMDB API."""
+    title = st.text_input("Type the title of the desired " +
+    "Movie/TV Show:")
+
+    if title:
+        url = f'http://www.omdbapi.com/?t={title}&apikey=a98f1e4b'
+        req = requests.get(url)
+        req = req.json()
+        col1, col2 = st.columns([1, 2])
+        with col1:
+            st.image(req['Poster'])
+        with col2:
+            st.subheader(req['Title'])
+            st.caption(
+                f"Genre: {req['Genre']} | Year: {req['Year']}" +
+                f" | Rated: {req['Rated']} |" +
+                f" Released: {req['Released']}")
+            st.write(req['Plot'])
+            st.text(f"Rating: {req['imdbRating']}")
+            st.progress(float(req['imdbRating']) / 10)
+        with open('response.json', 'w', 
+        encoding='utf-8') as json_file:
+            json.dump(req, json_file)
+        with open('response.json', 'r', 
+        encoding='utf-8') as file:
+            json.loads(file.read())
+        with open('response.json', 
+        encoding='utf-8') as inputfile:
+            df = pd.read_json(inputfile)
+        open('movie_search.csv', 'a', 
+        encoding='utf-8').write(df.to_csv(header = False, 
+        index=False))
+        duplicates = pd.read_csv('movie_search.csv', 
+        on_bad_lines='skip')
+        open('movie_clean.csv', 'a', 
+        encoding='utf-8').write(duplicates.to_csv(
+            header = False, index=False))
+```
+
+An example of the movie search feature and the movie prediction database is shown below:
 
 ![Snapshot of Movie Search Interface](images/movie_search.png)
 
