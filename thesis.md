@@ -253,13 +253,18 @@ Accuracy = (TP+TN)/(TP+TN+FP+FN)
 
 With the figures plugged into the formula being:
 
-Accuracy = ((0.581818182+0.490909091) / (0.581818182+0.490909091+0.418181818+0.509090909)) * 100 = **53.63636364%**
+Accuracy = ((0.581818182+0.490909091) / (0.581818182+0.490909091
++0.418181818+0.509090909)) * 100 = **53.63636364%**
 
 This shows that the textually-trained machine learning model is 53.64% accurate with it's predictions. Although this is a low percentage, it is higher than the prediction percentage mentioned in the related works section of this paper. This shows that this research paper has increased the overall prediction percentage for this area of research, essentially leading to a more accurate tool to be used for movie analysis. A snapshot of the testing interface is shown below:
 
 ![Snapshot of Testing Interface for Actors/Actresses - Movie Success](images/exp_success.png)
 
 ![Snapshot of Testing Interface for Actors/Actresses - Movie Success](images/expr_not_success.png)
+
+## Validity of Reearch
+
+making the point that the results match with recent literature "I see this in my data so that means my tool is working properly"
 
 ## Shortcomings of Research
 
