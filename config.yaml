@@ -27,7 +27,7 @@ toc-title: 'Table of Contents'
 toc: true # Table of contents
 toc_depth: 2
 lof: true # List of figures
-lot: false # List of tables
+lot: true # List of tables
 fontsize: 12pt
 linestretch: 1
 mainfont: # See https://tug.org/FontCatalogue/seriffonts.html for fonts
