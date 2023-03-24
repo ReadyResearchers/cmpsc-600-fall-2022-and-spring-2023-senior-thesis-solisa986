@@ -181,7 +181,6 @@ Table: Extract of IMDB Dataset from IMDB
 | tt0000018 | Das boxende Känguruh                        | 0       | ...  | Short                    |
 | tt0000019 | The Clown Barber                            | 0       | ...  | Comedy,Short             |
 
----
 
 
 As a way to deliver a movie recommendation system, this research extends previous research by linking the results of the machine learning model to a Streamlit application programming interface (API), which provides two unique experiences for the users. 
