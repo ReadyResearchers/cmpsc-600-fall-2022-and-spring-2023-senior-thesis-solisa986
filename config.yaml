@@ -2,9 +2,9 @@
 # https://maehr.github.io/academic-pandoc-template/
 
 # Project-specific values
-title: 'Binge On!: An Analysis Tool to Examine the Success Rates of Movies Through Ticketholders'
+title: 'Binge On!: A Machine Learning Analysis Tool to Examine the Success Rates of Movies'
 author: 'Adriana Solis'
-date: '01 December 2022'
+date: '01 April 2023'
 firstreader: 'Oliver Bonham Carter'
 secondreader: 'Russell Ormiston'
 logo: 'images/logo'
