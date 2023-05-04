@@ -1,10 +1,35 @@
+# Acknowledgements
+
+Throughout the course of writing this research paper, I have gone through so many emotions, mainly due to my program either deciding to randomly stop working or due to the stress of writing such an extensive paper. In this section, I would like to acknowledge all of the people along the way that either helped me to make this research paper possible or provided me with moral and emotional support.
+
+To **my mother, America Garcia Victoria, and my step-father, Carlos Victoria**:
+How do I say thank you to such an inspirational woman other than to credit half of my genius to you? I know for a fact that I would not be half of the person that I am without you and your amazing, unconditional support. Without your constant reassurance, pep talks, lendful ear (for when I would feel dejected and depleted with the research), and thoughtful texts of affirmation, I would not have been able to finish this project. For these reasons, and so many more that are not mentioned, I would like to say *thank you* and I love you <3. Carlos, you have always been what I consider my partner-in-crime, where we gang up on Mom for a good laugh (in a funny way I promise). Thank you for being my dad for me when I didn't have one, and for teaching me how to be a better person. I will never forget everything you have done for me and I hope to continue being someone you will be proud of.
+
+To **my siblings, Guadalupe Solis, Vicente Solis, America Rubi Nunez, Lucca Victoria, Jan Carlo Victoria, and Marshell Victoria**:
+I love you all so much, words cannot express how much your love and support for me throughout this year has helped me to finish this project. Especially Lupita, as without her weekly FaceTime's, I don't think I would have been able to stay sane. Thank you so much for providing me with comedic relief and a sense of home for whenever I needed a break from all of the academic stress. Thank you for always being spontaneous and for coming with me to run mundane tasks whenever I come home to visit. Though you were not able to physically provide me support, just the thought of our inside jokes and banter kept me happy whenever I needed it.
+
+To **my extended family**:
+Thank you for being the first group of people that believed in me, especially when I gave you guys no reason to be so trusting in my future. Without your continued support throughout the years, I doubt I would have been able to make it past the first year of college, let alone through this extensive research project. I have always looked forward to all of the varying conversations y'all have in the family group chat, as it allowed me to disconnect from academic reality and tune into life outside of college. Without your baby pictures, pet pictures, and words of affirmation, I would have gone crazy for sure.
+
+To **my best friends, Favour Ojo, Shira Haus, Kyrie Doniz, Hanna Nguyen, Laura Guo, Jasmin Noor Meyer Jaafari, Daniel Sanchez, Gabriel Schwartz, London Dejarnette, and Lilian Fogland**:
+Literally how do I start this. I have never felt such a deep connection with a group of friends as I do with you guys. We have truly gone through all of the ups and downs, and I would not trade any of it for the world. Thank you for being my sounding board, my shoulder to cry on, my source of unimaginably funny jokes, my drinking buddies. Thank you for always letting me hog the TV and choose all of the movies we watch, even if you guys complain about my movie choices. Thank you for never failing to provide me with peace and comfort whenever I needed it most. I love you guys so much and cannot wait to keep experiencing life to the fullest with you all! <3
+
+To **Maricarmen Cervantes, my fellow stats survivor**:
+Thank you for providing me with a good laugh as we struggled through Stats 1 and 2 together. Even though we may not have retained as much about stats as we should have, I still feel like I benefitted from those classes because it meant starting an amazing friendship with you. Thank you for coming with me to get 'study' margaritas and for always (somewhat) being down to watch whatever crazy movie I want to see. Your support throughout this project has been invaluable!
+
+To **my advisors, Oliver Bonham Carter and Russell Ormiston**:
+Thank you for all of your guidance and support throughout the course of this project. I know I wasn't always the most coherent thoughts whenever I would come to you guys for help, but I was always able to leave with my questions answered and reassurance about the progress of my senior thesis. I have never failed to laugh every time I went to your office hours, so thank you for being a comedic relief whenever I needed it.
+
+To **my beloved cat, Nena**:
+Meow meow meow meow. Meow meow, meow meow meow meow *meow* meow meow. Meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow, meow meow meow meow, meow meow meow meow meow, meow meow meow meow meow meow meow meow. Meow meow meow meow meow. Meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow. meow meow meow meow meow meow, meow meow meow meow meow meow, meow meow meow meow meow meow!
+
 # Introduction
 
 This chapter aims to describe the motivation, the current state of research, the overall goals, and the ethical implications that arose while preparing this project.
 
 ## Motivation
 
-Over the past decade, there has been significant growth in the number of movies being produced, specifically with the rise of movie production within streaming platforms. With this leap in movie production also comes a drastic change in the overall determinants of movie success, as the preferences for movies are ever changing to fit the demand of consumers. Movie success for the purposes of this research is the likelihood that a movie will generate revenue, given certain factors of the movie as well as the production budget of the movie. Through the preliminary analysis of recent literature about determinants of movie production, it can be inferred that past research has not focused on the overall features of movies that can influence their success. Most of the analysis focuses on predetermined factors of movie success, such as whether an actors/actresses star power can influence the profitability of a movie. In order to provide an in-depth research of what exactly will determine the success of a movie, this research performs the following steps to determine the factors of movie success: take all current and known features of movie success into account, determine which features are positively correlated to movie success through a preliminary logistic regression, and then use the determined features to perform machine learning using different algorithms. Once the machine learning model is properly trained with the given data, the end product is an interactive Streamlit-hosted application where a user is able to be given movie recommendations based on the correlation between the movie that the user chose.
+Over the past decade, there has been significant growth in the number of movies being produced, specifically with the rise of movie production within streaming platforms. With this leap in movie production also comes a drastic change in the overall determinants of movie success, as the preferences for movies are ever changing to fit the demand of consumers. Movie success for the purposes of this research is the likelihood that a movie will generate revenue, given certain factors of the movie as well as the production budget of the movie. Through the preliminary analysis of recent literature about determinants of movie production, it can be inferred that past research has not focused on how the overall features of movies that can influence movie success can be used towards a movie recommendation system. Most of the analysis focuses on predetermined factors of movie success, such as whether an actors/actresses star power can influence the profitability of a movie. In order to provide an in-depth research of what exactly will determine the success of a movie for the purposed of the creation of a movie recommendation system, this research performs the following steps to determine the factors of movie success: take all current and known features of movie success into account, determine which features are positively correlated to movie success through a preliminary logistic regression, and then use the determined features to perform machine learning using different algorithms. Once the machine learning model is properly trained with the given data, the end product is an interactive Streamlit-hosted application where a user is able to be given movie recommendations based on the correlation between the movie that the user chose.
 
 As the act of watching movies has been converted into a more lax and cost-effective activity thanks to the rise of streaming platforms, then it can be inferred that movies are an integral part of the way that people spend their leisure time. Therefore, continuing on from past research is necessary in order to propel the movie industry to be more in line with the rise in interest for personalized recommendation systems. The overall motivation for this area of research lies within the lack of reputable studies on how movie recommendation systems can influence the overall success of a movie. In order to provide insight into how the research gap in movie recommendation systems influences movie success, this paper does the following:
 
@@ -19,7 +44,7 @@ This section of the research paper is an in-depth analysis of the key points of 
 
 Notable areas of research that the movie industry focuses on is the prediction of movie success. For instance, experiments conducted by other data scientists featured a tool that would be able to predict movie success, with [@movie_success_1]'s tool ultimately being used to "predict the gross box office revenue to the nearest ten’s of million" and to "predict if the movie would make money, not by a specific amount, just if the budget was smaller than the revenue from ticket sales". [@movie_success_1]’s tool is then used to evaluate the specific percentage of the accuracy of their machine learning model when compared with their data on successful movies. When comparing the results of different experiments, the accuracy of the machine learning model hovered at around 60-64.7% range for accuracy of their models, and oftentimes are building off of previous research's machine learning models. As most of the previous experiments conducted in this area are built off of previous research and contain only data-fueled results (as in there is nothing interactive for users to do with the results), then it is essential for further research to be done in order to further understand what affects the overall success of a movie.
 
-With this, the proposed area of research focuses on essentially the same methodology, where the machine learning model is used as a predicator of movie success. As previously stated, the knowledge gap for this area of research is by extending previous research to include an interactive application, where users can utilize the pre-computed results from this research to display the list of recommended movies. This widens the chosen audience for the results of this paper to include all public users, movie industry personnel, and other data researchers. This ensures that the increasing demand for personalized movie recommendations is taken into account within this area of research.
+With this, the proposed area of research focuses on essentially the same methodology, where the machine learning model is used as a predicator of movie success. This project will extend [@movie_succes_1]'s findings by analyzing a bigger sample of movie data (around 8,000+) and by aiming for a higher accuracy percentage of the machine learning model. As previously stated, the knowledge gap for this area of research is by extending previous research to include an interactive application, where users can utilize the pre-computed results from this research to display the list of recommended movies. This widens the chosen audience for the results of this paper to include all public users, movie industry personnel, and other data researchers. This ensures that the increasing demand for personalized movie recommendations is taken into account within this area of research.
 
 ### Proposed Solution to Knowledge Gap
 
@@ -193,6 +218,8 @@ The second section of the Streamlit API contains a web page of the different sec
 
 Some of the challenges associated with this area of research deals with the amount of data that is being analyzed, as well as the overall accuracy of the machine learning model being used. Given the accuracy of the machine learning models in previous research, then the model being used for this research introduces some variability to the results. Additionally, the number of data points being analyzed can also influence the variability of the results, as this research runs the risk of giving results on antiquated and/or biased data. For example, a movie that is proven successful in 2008 may not contain all of the features of a successful movie in 2023 given the changes in consumerism in the movie industry. As a way to combat this loss of usefulness of the model/data, this research is using continuously updated data and data collection. For example, the data being used from IMDB is updated daily and the data from Kaggle is updated monthly. However, this runs the risk of the model becoming too slow to function, as it has to process and go through more movies in order to get it's results. Therefore, the datasets are stored in Streamlit's cache decorator instead of the computer's memory, so that the cached results and pathways can be reset with each refresh of the dataset. This way, the model stays as relevant as possible and is not too slow once more users are able to use the API.
 
+Another important challenge to note is with the weakness in using statistical analysis for the data of this project. As with any statistical analysis, there is always the liklihood that the analytical results of a sample do not align with the actual results for the population data. How this project overcomes this weakness is through the analysis of the p-value of all of the independent variables. As the p-value is a predicator for whether the given variable accurately explains the sample model, then it can also be used as an indicator of whether the null hypothesis would be retained if given another sample. With low p-values, then the model is able to be retained for accuracy.
+
 ## Goals of the Project
 
 As most of the project is dedicated towards predicting movie success and providing a more unique movie experience, then the main goal is to create a simplified application that users can navigate to for either result that they desire. Therefore, the creation of an application was required, which is where Streamlit comes into play. Streamlit is an open-source Python library where data scientists can create custom web apps for machine learning and data science. Using Streamlit to build the interface for the users streamlines the process of deploying the application, which allows for a faster runtime and less bugs during future uses of the application.
@@ -322,7 +349,9 @@ disney = disney[disney['type'].str.contains("TV Show") == False]
 hulu = hulu[hulu['type'].str.contains("TV Show") == False]
 ```
 
-When comparing the success of a movie between different movies of varying data, the following features were found to have a statistically significant influence on the success of a movie: Rating, Genre, Production Budget, Sequel, Domestic Box Office Earnings, and International Box Office Earnings. This information was obtained through the following platforms/languages: R Studio Cloud, R, and Python. Using R Studio Cloud, multiple linear regressions were ran on all of the features of a movie from the cleaned Opus dataframe. Any features that did not have a statistically significant R2 value and P-value were removed from the dataframe. These features were 'movie names, creative type, source, and production method'. 
+When comparing the success of a movie between different movies of varying data, the following features were found to have a statistically significant influence on the success of a movie: Rating, Genre, Production Budget, Sequel, Domestic Box Office Earnings, and International Box Office Earnings. This information was obtained through the following platforms/languages: R Studio Cloud, R, and Python. Using R Studio Cloud, multiple linear regressions were ran on all of the features of a movie from the cleaned Opus dataframe. Any features that did not have a statistically significant R2 value and P-value were removed from the dataframe.
+
+These features were 'movie names, creative type, source, and production method'. 
 
 ```r
 # simple regression on genre
@@ -384,7 +413,69 @@ For the Netflix, Hulu, Disney +, and Amazon Prime datasets, any genres that cont
 
 ## Data Analysis
 
-Since the main part of this paper revolves around the determinants of movie success, then the data analysis had to center around the binary variable 'movie_success'. This binary variable is analyzed using Binary Logistic Regression, where this models the relationship between a set of independent variables and a binary dependent variable, which is coded as a 1 (movie success) or 0 (not a movie success). This involves the regression model prediciting P(Y=1) as a function of X, where the analysis is the probability that the dependent variable 'movie_success' will take a value of 1 given the independent variables of X. The independent variables used in this regression are categorical and continuous. In order to run the regression on only the statistically significant values, a step-wise linear regression was ran using R Studio Cloud. In this regression, a new variable was created (called total revenue) that was the sum of the domestic box office earnings and the international box office earnings. Through running a simple regression, the following features were found to be statistically significant, as they had a p-value that was less than .05 (this means that there is a 95% confidence level that this feature explains the overall model): production year, production budget, domestic box office, international box office, rating, sequel, running time, genre_Adventure, genre_Action, genre_Black Comedy, genre_Comedy, genre_Concert/Performance, genre_Documentary, genre_Drama, genre_Horror, genre_Musical, genre_Romantic Comedy, genre_Thriller/Suspense, genre_Western. Below are examples of the logistic regressions ran for some of the features being analyzed against movie success.
+Since the main part of this paper revolves around the determinants of movie success, then the data analysis had to center around the binary variable 'movie_success'. This binary variable is analyzed using Binary Logistic Regression, where this models the relationship between a set of independent variables and a binary dependent variable, which is coded as a 1 (movie success) or 0 (not a movie success). This involves the regression model prediciting P(Y=1) as a function of X, where the analysis is the probability that the dependent variable 'movie_success' will take a value of 1 given the independent variables of X. The independent variables used in this regression are categorical and continuous. In order to run the regression on only the statistically significant values, a step-wise linear regression was ran using R Studio Cloud. In this regression, a new variable was created (called total revenue) that was the sum of the domestic box office earnings and the international box office earnings. All of the independent variable of X were then individually regressed on the 'total_revenue' column, which the significance of each variable then determined by their calculated p-value.
+
+To go deeper into what the significance of a p-value, one must first be introduced to the notion of hypothesis testing in statistics. Hypothesis testing is where the plausability of a certain hypothesis can be applied to the overall population using sample data. In this type of testing, an alternative hypothesis about the population is made along with a null hypothesis, which is the opposite of the alternative hypothesis. From there, the test statistics are identified (sample mean and sample standard deviation of the mean). Based on the number of observations, either the Z value or the T value is then used to determine the rejection region of the probability distribution curve. The Z score is determined by: signifying what the confidence level is (typically at either 95% or 90%) and determining whether it needs to be a one-tailed or two-tailed test (based on the alternative hypothesis). Once the type of test and confidence level is determined, the Z score can then be calculated from this as the following:
+
+- (1 - confidence level) 
+    - *for a one-tailed test*
+- (1 - confidence level) / 2 
+    - *for a two-tailed test*
+
+Once the Z score is calculated, then the X value for the start of the rejection region is determined based on what the Z score corresponds to on the Z Score table (of which an example is shown below):
+
+![Z Score Table Excerpt](images/zscore.png){width="500" height="400" style="display: block; margin: 0 auto" }
+
+This X value determines rejection region, which is the area to the left of the Z score. From there, the confidence intervale is determined, which is the X coordinates of the part of the probability distribution function that is not a part of the rejection region. Once this region is known, then the sample mean, sample standard deviation, and sample Z score is plugged into the following equation in order to find the predicted deviation of the mean:
+
+**Z score sample = ((observed value) - sample mean) / sample standard deviation**
+
+As the Z score, sample mean, and sample standard deviation is either known or has been calculated at this point, then the formula can be re-arranged to find the observed value:
+
+**observed value = (Z score)(sample standard deviation) + sample mean**
+
+The observed value is the statistically significant point of variation between the sample mean and the population, where one would reject the null hypothesis if the sample mean were to satisfy the null hypothesis (where the observed value is used as the predicted mean of the population for the null hypothesis). If the null hypothesis is retained, then that signifies that the sample mean does not accurately reflect what is occuring in the population data. Once the hypothesis testing reflects whether the null hypothesis is retained or rejected, then the p-value can be calculated, where it is the probability that the null hypothesis explains the population data given the sample data. To calculate the p-value, the following formula is used:
+
+**p-value = probability(Z score < ((sample mean - hypothesized mean) / sample standard deviation)) * (number of tails in hypothesis testing)**
+
+Which can then be condensed into:
+
+**p-value = probability(Z score < sample Z score) * (number of tails in hypothesis testing)**
+
+Once the sample Z score is calculated, then the probability of the population Z score being less than the sample Z score can be determined through the use of the Z score table. This probability score becomes the P-value. The interpretation of this p-value is as follows:
+
+If the dependent variable 'x' has no effect on the success of a movie, then "(p-value * 100)"% of studies will obtain the effect described in the null hypothesis in their sample because of random sample error. Essentially, the p-value will determine the liklihood that the null hypothesis was incorrectly rejected as an explanation for the population data. Since this determines the statistical significance of the regression, then p-values are considered significant to the distribution of the model if it is .05 or lower. Anything higher than .05 signifies that the effect of X on the sample does not provide enough significance to the effect of X on the population.
+
+Using this explanation of the significance of p-values, the following shows the p-values of the different columns in the dataset as they were regressed on the column 'movie success' for statistical significance:
+
+Table: Results of Stepwise Linear Regression on 'movie_success'
+
+| Column Name               | Coefficient    | Standard Deviation | P-value |
+|---------------------------|----------------|--------------------|---------|
+| production_year           | 0.0066         | 0.003              | 0.025   |
+| production_budget         | 0.000000001652 | 0.000000000177     | 0.000   |
+| domestic_box_office       | 0.000000001666 | 0.000000000103     | 0.000   |
+| international_box_office  | 0.000000000778 | 0.00000000000576   | 0.000   |
+| rating                    | -0.0830        | 0.011              | 0.000   |
+| sequel                    | 0.2153         | 0.027              | 0.000   |
+| running_time              | 0.0016         | 0.001              | 0.002   |
+| genre_Action              | 0.0452         | 0.027              | 0.092   |
+| genre_Adventure           | 0.1424         | 0.026              | 0.000   |
+| genre_Black_Comedy        | -0.0092        | 0.092              | 0.920   |
+| genre_Comedy              | -0.0109        | 0.027              | 0.684   |
+| genre_Concert/Perf... | 0.0625         | 0.172              | 0.716   |
+| genre_Documentary         | -0.1715        | 0.188              | 0.362   |
+| genre_Drama               | -0.1636        | 0.023              | 0.000   |
+| genre_Horror              | 0.0351         | 0.045              | 0.435   |
+| genre_Musical             | 0.0117         | 0.088              | 0.894   |
+| genre_Romantic_Comedy     | 0.0957         | 0.048              | 0.046   |
+| genre_Thriller/Suspense   | 0.0077         | 0.030              | 0.797   |
+| genre_Western             | -0.2397        | 0.109              | 0.028   |
+
+
+Through running a simple regression, the following features were found to be statistically significant, as they had a p-value that was less than .05: production year, production budget, domestic box office, international box office, rating, sequel, running time, genre_Adventure, genre_Drama, genre_Western.
+
+Below are examples of the logistic regressions ran for some of the features being analyzed against movie success.
 
 ![Logistic Regression of Production Year on Movie Success](images/prod_year_analysis.png){width="500" height="400" style="display: block; margin: 0 auto" }
 
@@ -394,10 +485,51 @@ Since the main part of this paper revolves around the determinants of movie succ
 ![Logistic Regression of Adventure Genre on Production Budget](images/dom_office_analysis.png){width="500" height="400" style="display: block; margin: 0 auto"}
 
 
-Since the column of movie success was created using the domestic box office and international box office figures, then these variables were ultimately dropped from the rest of the processing. The following is a graph generated by R Studio Cloud when regressing the residuals of all of the variables against movie success:
+Since the column of movie success was created using the domestic box office and international box office figures, then these variables were ultimately dropped from the rest of the processing. Given the results from previous research, the significant variables identified with the logistic regression fit with the results from previous research. Essentially, the results are sensible with the subject matter being studied. 
 
-![Residual Regression of all Features on Movie Success](images/movie_success_resid.png){width="500" height="400" style="display: block; margin: 0 auto"}
+As the regressions ran were multiple single regressions with one independent 'x' variable being regressed against the 'y' variable 'movie_success', then there is the probability of the results containing omitted variable bias. As the independent variables were not all analyzed alongside each other when being regressed against 'movie_success', then there is the liklihood that the coefficients do not take into account the influence that the other independent variables have on the 'movie_success' variable. This could lead to a bias in the estimates of the coefficients of the rest of the independent variables, as well as the hypothesis tests about the coefficients of the independent variables, making the predicted values of p not as reliable with the model. This creates concerns about the validity of the model, as it mainly relies on the statistical significance of the stepwise linear regression results.
 
+In an effort to combat the omitted variable bias, a multiple logistic regression was ran alongside the aforementioned stepwise linear regressions to confirm the statistically significant variables. The results of running the multiple logistic is shown below:
+
+Table: Results of Multiple Logistic Regression on 'movie_success'
+
+| Column Name               | Coefficient   | Standard Deviation | P-value      |
+|---------------------------|---------------|--------------------|--------------|
+| production_year           | 0.02849       | 0.01815            | 0.11644      |
+| production_budget         | 0.00000001231 | 0.000000002158     | 0.0000000119 |
+| rating 1                  | -0.7652       | 0.6559             | .24335       |
+| rating 2                  | -0.8864       | 0.6653             | 0.18278      |
+| rating 3                  | -1.377        | 0.6651             | 0.03839      |
+| rating 4                  | 11.20         | 324.7              | .97248       |
+| rating 5                  | -1.469        | 0.7445             | 0.04846      |
+| sequel                    | 1.459         | 0.3025             | .00000142    |
+| genre_Action              | 0.8137        | 0.5798             | 0.16050      |
+| genre_Comedy              | 1.198         | 0.5751             | 0.03721      |
+| genre_Drama               | 0.6735        | 0.5680             | 0.23570      |
+| genre_Adventure           | 1.036         | 0.6151             | 0.09201      |
+| genre_Black_Comedy        | 1.368         | 0.7608             | 0.07222      |
+| genre_Concert/Performance | 1.599         | 1.257              | 0.20313      |
+| genre_Documentary         | 0.1045        | 1.172              | 0.92896      |
+| genre_Horror              | 1.389         | 0.6212             | 0.02532      |
+| genre_Musical             | 0.5013        | 0.7771             | 0.51888      |
+| genre_Romantic_Comedy     | 1.848         | 0.6493             | 0.00443      |
+| genre_Thriller/Suspense             | 1.317            | 0.5802                 | 0.02319           |
+| genre_Western             | NA            | NA                 | NA           |
+
+For the results of the multiple logistic regression, the following columns were deemed statistically significant as their P-value is .05 or less:
+
+1. production_budget
+2. rating 3
+3. rating 5
+4. sequel
+5. genre_Comedy
+6. genre_Adventure
+7. genre_Black Comedy
+8. genre_Horror
+9. genre_Romantic Comedy
+10. genre_Thriller/Suspense
+
+When comparing the results of the stepwise linear regressions and the multiple logistic regressions, there are some columns that were deemed statistically significant by both models, whereas other columns were deemed statistically significant by one model but not the other. This discrepancy is due to: the difference in the number of independent variables being regressed on the y variable 'movie_success' and the difference in regression types (linear and logistic). As the variable being regressed is binary and multiple independent variables decrease the amount of omitted variable bias, then the results from the multiple logisitic regressions are used as the final regression results for the purposes of this paper. However, given the limited number of observations in the data, it was decided that all of the genres should remain statistically significant towards the creation of the machine learning model.
 
 After doing the preliminary data analysis to find the statistically significant features, it was then time to do the machine learning analysis of the data. Machine learning is the process of 'making systems that learn and improve by themselves, by being specifically programmed' [@banoula]. For machine learning all of the statistically significant features were put as the x value, with the y-value being the movie success column. The data was randomized to make sure that it is evenly distributed and that the ordering does not affect the learning process. From there, the data is split into training and testing data. The training data (which is 30% of the total data) is what the machine learning model learns from, where it takes in all of the features included in x and then attempt to guess the possibility of y based on these features. The testing data (which is 70% of the total data) is used to check the accuracy of the model after training.
 
